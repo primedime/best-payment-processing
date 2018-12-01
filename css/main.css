@@ -7,8 +7,8 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+Base styles: opinionated defaults
+========================================================================== */
 
 html {
     color: #222;
@@ -20,7 +20,7 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -89,8 +89,8 @@ textarea {
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+Browser Upgrade Prompt
+========================================================================== */
 
 .browserupgrade {
     margin: 0.2em 0;
@@ -100,8 +100,8 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+Author's custom styles
+========================================================================== */
 
 
 
@@ -120,8 +120,8 @@ textarea {
 
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+Helper classes
+========================================================================== */
 
 /*
  * Hide visually and from screen readers
@@ -199,19 +199,19 @@ textarea {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -292,30 +292,30 @@ textarea {
 }
 
 /* start navigation bar */
-  
-  .top-nav {
+
+.top-nav {
     overflow: hidden;
     text-align: center;
     width: 100%;
     background: #f5f5f5;
-  }
-  
-  .top-nav a {
+}
+
+.top-nav a {
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: inline-block;
-  }
+}
 
-  .top-nav a:hover {
+.top-nav a:hover {
     color: #1aa2dd;
-  }
-  
-  .top-nav a.active {
+}
+
+.top-nav a.active {
     color: #1aa2dd;
-  }
+}
 
 /* end navigation bar */
 
