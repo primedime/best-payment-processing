@@ -380,6 +380,36 @@ img {
 }
 /* end table content */
 
+/* start .bottom-info */
+
+.bottom-info h4 {
+    position: relative;
+    color: #21538d;
+}
+.bottom-info p {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    color: #676b6b;
+    font-weight: normal;
+}
+.bottom-info b {
+    color: #21538d;
+}
+.bottom-info ul li {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 25px;
+    color: #676b6b;
+    letter-spacing: -0.2px;
+    font-weight: 300;
+    display: block;
+    padding: 0 0 0 20px;
+    margin: 2px 0 2px 0;
+    position: relative;
+}
+
+/* end .bottom-info */
+
 /* start footer content */
 
 .footer {
