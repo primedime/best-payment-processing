@@ -338,6 +338,7 @@ Modify as content requires.
 
 .hero {
   width: 100%;
+  flex: 1;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
