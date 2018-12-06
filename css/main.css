@@ -11,21 +11,21 @@ Base styles: opinionated defaults
 ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-    animation: fadeIn 1s ease-in-out;
-    height: 100%;
-    width: 100%;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  animation: fadeIn 1s ease-in-out;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .site-wrapper {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /*
@@ -39,13 +39,13 @@ body {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
@@ -53,12 +53,12 @@ body {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -73,7 +73,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
@@ -81,9 +81,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -91,7 +91,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
@@ -99,31 +99,15 @@ Browser Upgrade Prompt
 ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 /* ==========================================================================
 Author's custom styles
 ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
 Helper classes
@@ -134,7 +118,7 @@ Helper classes
  */
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 /*
@@ -147,14 +131,14 @@ Helper classes
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap; /* 1 */
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
 }
 
 /*
@@ -165,13 +149,13 @@ Helper classes
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
 }
 
 /*
@@ -179,7 +163,7 @@ Helper classes
  */
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*
@@ -196,12 +180,12 @@ Helper classes
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: ' '; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /* ==========================================================================
@@ -211,14 +195,11 @@ Modify as content requires.
 ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+  /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-    (-webkit-min-device-pixel-ratio: 1.25),
-    (min-resolution: 1.25dppx),
-    (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -228,115 +209,127 @@ Modify as content requires.
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: ' (' attr(href) ')';
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+    content: ' (' attr(title) ')';
+  }
 
-    /*
+  /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  a[href^='#']:after,
+  a[href^='javascript:']:after {
+    content: '';
+  }
 
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    /*
+  /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
 
-    thead {
-        display: table-header-group;
-    }
+  thead {
+    display: table-header-group;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
-
 
 /* site wrapper */
 .site-wrapper {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* start navigation bar */
 
 .top-nav {
-    overflow: hidden;
-    text-align: center;
-    width: 100%;
-    background: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  max-height: 100px;
+  background: #fff;
+  padding: 0 10px;
 }
 
-.top-nav a {
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: inline-block;
+.top-nav > ul {
+  display: flex;
+  list-style: none;
+}
+
+.top-nav li > a {
+  color: #707070;
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  padding: 0 60px 0 0;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .top-nav a:hover {
-    color: #1aa2dd;
+  color: #1aa2dd;
 }
 
 .top-nav a.active {
-    color: #1aa2dd;
+  color: #1aa2dd;
 }
 
 /* end navigation bar */
@@ -344,32 +337,32 @@ Modify as content requires.
 /* start .hero */
 
 .hero {
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .hero #header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .hero h1 {
-    font-size: 27px;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-    min-height: auto;
-    margin: 25px 20px 14px;
+  font-size: 27px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  min-height: auto;
+  margin: 25px 20px 14px;
 }
 
 .hero p {
-    font-family: inherit;
-    text-align: center;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400;
-    margin: 0;
+  font-family: inherit;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  margin: 0;
 }
 
 /* end .hero */
@@ -377,41 +370,45 @@ Modify as content requires.
 /* start table content */
 
 table .table-bordered {
-    width: 100%;
-    border: 1px solid #dee2e6;
+  width: 100%;
+  border: 1px solid #dee2e6;
 }
-.table-bordered td, .table-bordered th {
-    text-align: left;
-    padding: 0.25em;
-    border: 1px solid #dee2e6;
-    vertical-align: top;
-    padding: .75rem;
-    display: table-cell;
+.table-bordered td,
+.table-bordered th {
+  text-align: left;
+  padding: 0.25em;
+  border: 1px solid #dee2e6;
+  vertical-align: top;
+  padding: 0.75rem;
+  display: table-cell;
 }
 .table-bordered tr {
-    border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 .table-bordered {
-    position: relative;
-    text-align: center;
-    top: 3rem;
-    margin: auto;
-    width: 50%;
-    max-width: 100%;
-    margin-bottom: 1rem;
-    background: #f5f5f5; 
-    border-collapse: collapse;
+  position: relative;
+  text-align: center;
+  top: 3rem;
+  margin: auto;
+  width: 50%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background: #f5f5f5;
+  border-collapse: collapse;
 }
-*, ::after, ::before {
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 .table td ul li {
-    text-align: left;
+  text-align: left;
 }
-img {
-    position: relative;
-    margin: auto;
-    top: 5rem; bottom:0;
+.table > img {
+  position: relative;
+  margin: auto;
+  top: 5rem;
+  bottom: 0;
 }
 
 /* end table content */
@@ -419,61 +416,76 @@ img {
 /* start .bottom-info */
 
 .site-wrapper .under-table-info h4 h5 {
-    width: auto;
-    position: relative;
-    color: #21538d;
+  width: auto;
+  position: relative;
+  color: #21538d;
 }
 .under-table-info p {
-    font-family: Roboto, sans-serif;
-    font-size: 15px;
-    color: #676b6b;
-    font-weight: normal;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  color: #676b6b;
+  font-weight: normal;
 }
 .under-table-info b {
-    color: #21538d;
+  color: #21538d;
 }
 .under-table-info ul li {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 25px;
-    color: #676b6b;
-    letter-spacing: -0.2px;
-    font-weight: 300;
-    display: block;
-    padding: 0 0 0 20px;
-    margin: 2px 0 2px 0;
-    position: relative;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 25px;
+  color: #676b6b;
+  letter-spacing: -0.2px;
+  font-weight: 300;
+  display: block;
+  padding: 0 0 0 20px;
+  margin: 2px 0 2px 0;
+  position: relative;
 }
 
 /* end .bottom-info */
 
 /* start .business-info */
 
-
-
 /* end .business-info */
 
 /* start footer content */
 
 .footer {
-    flex-shrink: 0;
-    background-color: #f5f5f5;
-    text-align: center;
-}
-.footer p {
-    padding: 0.75rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  background-color: #555555;
+  color: #ebebeb;
 }
 
+footer > .copyright-text {
+  text-align: center;
+}
+
+footer .links > ul {
+  display: flex;
+  list-style: none;
+}
+
+footer li {
+  color: #ebebeb;
+  margin-right: 10px;
+}
+
+footer li > a {
+  text-decoration: none;
+  color: #ebebeb;
+}
 /* end footer content */
-
 
 /* keyframes */
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
