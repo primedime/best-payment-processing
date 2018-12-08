@@ -396,45 +396,49 @@ Modify as content requires.
 
 /* end .hero */
 
-/* start cssgrid */
-
-.grid-wrap {
+.box-wrapping {
   display: flex;
-  flex: 1;
+  flex:1;
   flex-direction: column;
   align-items: center;
 }
-.grid-wrap .grid-header > h2 {
-  width: 299px;
-  height: 25px;
-  font-family: AvenirNext;
-  font-size: 32px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.3px;
-  text-align: left;
-  color: #69bd45;
+.box-wrapping .recommend-header {
+
 }
-.grid-wrap > .grid-cells {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
-  height: 500px;
-  width: 500px;
-  grid-gap: 10px;
-  grid-template-areas: 
-    "a a b"
-    "a a b";
+.box-wrapping-columns {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+  align-content: stretch;
+  justify-content: space-around;
 }
-.item1 {
-  grid-area: a;
+.ranking-box1 {
+  border-style: solid 1px;
+  border-color: #ebebeb;
 }
-.item2 {
-  grid-area: b;
+.ranking-box1 > h3 {
+  /*company name*/
 }
-/* end cssgrid */
+.blog-box1 {
+  background: rgb(234,245,250);
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+.blog-box1 > .social-icons {
+  /*space the icons apart*/
+  color: #00416b;
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 10px;
+}
+.social-icons > a {
+  color: #00416b;
+}
 
 /* start .bottom-info */
 
