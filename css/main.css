@@ -435,6 +435,17 @@ Modify as content requires.
   align-content: stretch;
   justify-content: space-around;
 }
+.box-wrapping-columns .company-left > * {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  float: left;
+}
+.box-wrapping-columns .company-right > * {
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
 .ranking-box .ranking-logo > img {
   width: 239px;
   height: 57px;
@@ -452,6 +463,22 @@ Modify as content requires.
   letter-spacing: 0.2px;
   text-align: left;
   color: #00416b;
+}
+.ranking-box .ranking-stars > img {
+  display: flex;
+  flex-direction: row;
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+  font-family: FontAwesome5ProSolid;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #dabf27;
 }
 .ranking-box .company-telephone > h3 {
   width: 218px;
@@ -511,6 +538,12 @@ Modify as content requires.
   letter-spacing: 0.2px;
   text-align: right;
   color: #00416b;
+  float: right;
+}
+.ranking-box .rating-bar {
+  width: 360px;
+  height: 10px;
+  background-color: #69bd45;
 }
 .ranking-box .company-description > p {
   width: 397px;
