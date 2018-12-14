@@ -182,7 +182,7 @@ Helper classes
 
 .clearfix:before,
 .clearfix:after {
-  content: " ";
+  content: ' ';
   /* 1 */
   display: table;
   /* 2 */
@@ -202,10 +202,7 @@ Modify as content requires.
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -233,11 +230,11 @@ Modify as content requires.
   }
 
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: ' (' attr(href) ')';
   }
 
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: ' (' attr(title) ')';
   }
 
   /*
@@ -245,9 +242,9 @@ Modify as content requires.
      * or use the `javascript:` pseudo protocol
      */
 
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
+  a[href^='#']:after,
+  a[href^='javascript:']:after {
+    content: '';
   }
 
   pre {
@@ -367,18 +364,18 @@ Modify as content requires.
 }
 
 @font-face {
-  src: url(fonts/AvenirNext-Bold.ttf) format("truetype");
-  src: url(fonts/AvenirNext-BoldItalic-02.ttf) format("truetype");
-  src: url(fonts/AvenirNext-DemiBold-03.ttf) format("truetype");
-  src: url(fonts/AvenirNext-DemiBoldItalic.ttf) format("truetype");
-  src: url(fonts/AvenirNext-Heavy-09.ttf) format("truetype");
-  src: url(fonts/AvenirNext-HeavyItalic.ttf) format("truetype");
-  src: url(fonts/AvenirNext-Italic-05.ttf) format("truetype");
-  src: url(fonts/AvenirNext-Medium-06.ttf) format("truetype");
-  src: url(fonts/AvenirNext-MediumItalic-07.ttf) format("truetype");
-  src: url(fonts/AvenirNext-Regular-08.ttf) format("truetype");
-  src: url(fonts/AvenirNext-UltraLight-11.ttf) format("truetype");
-  src: url(fonts/AvenirNext-UltraLightItalic-12.ttf) format("truetype");
+  src: url(fonts/AvenirNext-Bold.ttf) format('truetype');
+  src: url(fonts/AvenirNext-BoldItalic-02.ttf) format('truetype');
+  src: url(fonts/AvenirNext-DemiBold-03.ttf) format('truetype');
+  src: url(fonts/AvenirNext-DemiBoldItalic.ttf) format('truetype');
+  src: url(fonts/AvenirNext-Heavy-09.ttf) format('truetype');
+  src: url(fonts/AvenirNext-HeavyItalic.ttf) format('truetype');
+  src: url(fonts/AvenirNext-Italic-05.ttf) format('truetype');
+  src: url(fonts/AvenirNext-Medium-06.ttf) format('truetype');
+  src: url(fonts/AvenirNext-MediumItalic-07.ttf) format('truetype');
+  src: url(fonts/AvenirNext-Regular-08.ttf) format('truetype');
+  src: url(fonts/AvenirNext-UltraLight-11.ttf) format('truetype');
+  src: url(fonts/AvenirNext-UltraLightItalic-12.ttf) format('truetype');
 }
 
 .hero .hero-header > h1 {
@@ -431,9 +428,20 @@ Modify as content requires.
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: center;
-  align-content: stretch;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.ranking-column {
+  display: flex;
+  flex-direction: column;
+}
+.company-left {
+  display: flex;
+  flex-direction: column;
+}
+.company-right {
+  display: flex;
+  flex-direction: column;
 }
 .box-wrapping-columns .company-left > * {
   display: flex;
@@ -513,8 +521,7 @@ Modify as content requires.
   flex-wrap: wrap;
   width: 800px;
   height: 400px;
-  border-style: solid 1px;
-  border-color: #ebebeb;
+  border: solid 1px #ebebeb;
 }
 
 .ranking-box .company-name > h3 {
@@ -577,6 +584,15 @@ Modify as content requires.
   justify-content: flex-start;
   align-items: stretch;
   align-content: stretch;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-item {
+  margin: 0 20px;
 }
 .blog-column > .social-icons {
   /*space the icons apart*/
