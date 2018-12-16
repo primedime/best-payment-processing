@@ -558,6 +558,8 @@ Modify as content requires.
 }
 
 .rating>b {
+  padding: 10px;
+  padding-right: 30px;
   font-family: AvenirNext-Bold;
   font-size: 16px;
   font-weight: bold;
@@ -571,6 +573,7 @@ Modify as content requires.
 }
 
 .rating-bar {
+  padding-left: 90px;
   width: 360px;
   height: 10px;
   background-color: #69bd45;
@@ -793,8 +796,8 @@ Modify as content requires.
 }
 
 .high-risk-header>h3 {
-  padding: 28px;
-  margin-left: 183px;
+  padding: 38px;
+  margin-left: 181px;
   font-family: AvenirNext-Bold;
   font-size: 36px;
   font-weight: bold;
@@ -806,9 +809,305 @@ Modify as content requires.
   color: #00416b;
 }
 
-/* end .business-info */
+.high-risk-description {
+  margin: 0 181px;
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+}
 
-/* start footer content */
+.high-risk-list {
+  padding-bottom: 33px;
+  margin: 0 181px;
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  line-height: 2;
+  color: #00416b;
+}
+
+.service-info-box-four {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-processors-header>h3 {
+  padding: 38px;
+  margin: 0 181px;
+  font-family: AvenirNext-Bold;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+}
+
+.card-processors-description {
+  margin: 0 181px;
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+}
+
+.card-processors-list {
+  padding-bottom: 59px;
+  margin: 0 181px;
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  line-height: 2;
+  color: #00416b;
+}
+
+.service-info-box-five {
+  background: #ebebeb;
+}
+
+.small-business-header>h3 {
+  padding: 38px;
+  margin: 0 181px;
+  font-family: AvenirNext-Bold;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+}
+
+.small-business-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 53px;
+}
+
+.small-business-description-one {
+  margin: 0 181px;
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+}
+
+.small-business-description-two {
+  margin: 0 181px;
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+}
+
+.service-info-box-six {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-gateways {
+  margin: 0 181px;
+}
+
+.payment-gateways-header>h3 {
+  font-family: AvenirNext-Bold;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+}
+
+.payment-gateways-description>p {
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+}
+
+.top-three-providers {
+  margin: 0 181px;
+}
+
+.top-three-providers-header>h3 {
+  font-family: AvenirNext-Bold;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #69bd45;
+}
+
+.provider-logo>img {
+  width: 185px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.provider-name {
+  font-family: AvenirNext-Regular;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+}
+
+.provider-get-quote-button {
+  padding-bottom: 54px;
+}
+
+.provider-get-quote-button>button {
+  width: 251px;
+  height: 51px;
+  background-color: #69bd45;
+  font-family: AvenirNext-Bold;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.provider-info-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.provider-best-for>p {
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+}
+
+.provider-best-for>b {
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+  font-weight: bold;
+}
+
+.provider-pros-cons-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 78px;
+  padding-bottom: 43px;
+}
+
+.provider-pros ul>li {
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+}
+
+.provider-pros>b {
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+  font-weight: bold;
+}
+
+.provider-cons ul>li {
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+}
+
+.provider-cons>b {
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00416b;
+  font-weight: bold;
+}
 
 .footer {
   display: flex;
