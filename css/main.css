@@ -7,6 +7,25 @@
  */
 
 /* ==========================================================================
+Custom Font - Avenir Next
+========================================================================== */
+
+@font-face {
+  font-family: 'AvenierNext-Bold';
+  src: url(fonts/AvenirNext-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'AvenirNext-Medium';
+  src: url(fonts/AvenirNext-Medium-06.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'AvenirNext-Regular';
+  src: url(fonts/AvenirNext-Regular-08.ttf) format('truetype');
+}
+
+/* ==========================================================================
 Base styles: opinionated defaults
 ========================================================================== */
 
@@ -23,7 +42,7 @@ html {
 
 body {
   margin: 0;
-  font-family: AvenirNext-Regular, Arial, Helvetica, sans-serif;
+  font-family: 'AvenirNext-Regular', Arial, Helvetica, sans-serif;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -112,20 +131,6 @@ Author's custom styles
 /* ==========================================================================
 Typography Styles
 ========================================================================== */
-@font-face {
-  src: url(fonts/AvenirNext-Bold.ttf) format('truetype');
-  src: url(fonts/AvenirNext-BoldItalic-02.ttf) format('truetype');
-  src: url(fonts/AvenirNext-DemiBold-03.ttf) format('truetype');
-  src: url(fonts/AvenirNext-DemiBoldItalic.ttf) format('truetype');
-  src: url(fonts/AvenirNext-Heavy-09.ttf) format('truetype');
-  src: url(fonts/AvenirNext-HeavyItalic.ttf) format('truetype');
-  src: url(fonts/AvenirNext-Italic-05.ttf) format('truetype');
-  src: url(fonts/AvenirNext-Medium-06.ttf) format('truetype');
-  src: url(fonts/AvenirNext-MediumItalic-07.ttf) format('truetype');
-  src: url(fonts/AvenirNext-Regular-08.ttf) format('truetype');
-  src: url(fonts/AvenirNext-UltraLight-11.ttf) format('truetype');
-  src: url(fonts/AvenirNext-UltraLightItalic-12.ttf) format('truetype');
-}
 
 h1,
 h2,
@@ -135,7 +140,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: AvenirNext-Bold;
+  font-family: 'AvenirNext-Bold';
   color: #00416b;
 }
 
@@ -149,14 +154,14 @@ h2.green-bold {
 }
 
 h2.green-medium {
-  font-family: AvenirNext-Medium;
+  font-family: 'AvenirNext-Medium';
   font-size: 32px;
   font-weight: 500;
   color: #69bd45;
 }
 
 h3.green-medium {
-  font-family: AvenirNext-Medium;
+  font-family: 'AvenirNext-Medium';
   font-size: 24px;
   font-weight: 500;
   color: #69bd45;
@@ -164,7 +169,7 @@ h3.green-medium {
 
 p {
   font-size: 16px;
-  font-family: AvenirNext-Regular;
+  font-family: 'AvenirNext-Regular';
   color: #00416b;
 }
 
@@ -186,7 +191,6 @@ Button Styles
 ========================================================================== */
 
 .button-cta > button {
-  display: flex;
   border: none;
   margin-bottom: 54px;
 }
@@ -295,7 +299,7 @@ Home Page We Recommend Body Styles Styles
 }
 
 .box-wrapping .recommend-header > h2 {
-  font-family: AvenirNext-Medium;
+  font-family: 'AvenirNext-Medium';
   font-size: 32px;
   font-weight: 500;
   letter-spacing: 0.32px;
@@ -343,7 +347,7 @@ Home Page We Recommend Body Styles Styles
 }
 
 .company-slogan > h4 {
-  font-family: AvenirNext-Medium;
+  font-family: 'AvenirNext-Medium';
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.2px;
@@ -384,7 +388,7 @@ Home Page We Recommend Body Styles Styles
 }
 
 .company-telephone > h3 {
-  font-family: AvenirNext-Regular;
+  font-family: 'AvenirNext-Regular';
   font-size: 24px;
   font-weight: normal;
   letter-spacing: 0.2px;
@@ -402,7 +406,7 @@ Home Page We Recommend Body Styles Styles
 }
 
 .company-name > h3 {
-  font-family: AvenirNext-Medium;
+  font-family: 'AvenirNext-Medium';
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.2px;
@@ -411,7 +415,7 @@ Home Page We Recommend Body Styles Styles
 
 .rating {
   font-weight: bold;
-  font-family: AvenirNext-Bold;
+  font-family: 'AvenirNext-Bold';
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.2px;
@@ -425,7 +429,7 @@ Home Page We Recommend Body Styles Styles
 }
 
 .company-description > p {
-  font-family: AvenirNext-Medium;
+  font-family: 'AvenirNext-Medium';
   font-size: 14px;
   letter-spacing: 0.1px;
   color: #00416b;
@@ -436,7 +440,7 @@ ul.fa-ul {
 }
 
 .company-pros-list ul > li {
-  font-family: AvenirNext-Medium;
+  font-family: 'AvenirNext-Medium';
   line-height: 35px;
   letter-spacing: 0.2px;
   color: #00416b;
@@ -477,8 +481,8 @@ ul.fa-ul {
 .blog-column .blog-snippet > h2 {
   font-size: 30px;
   line-height: 100px;
-  font-family: AvenirNext-Medium;
-  font-weight: normal;
+  font-family: 'AvenirNext-Medium';
+  font-weight: 400;
   color: #00416b;
 }
 
@@ -604,9 +608,9 @@ Top 3 Styles Styles
 
 .provider-name > h3 {
   padding-bottom: 30px;
-  font-family: AvenirNext-Regular;
+  font-family: 'AvenirNext-Regular';
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 300;
   color: #00416b;
 }
 
@@ -627,10 +631,9 @@ Top 3 Styles Styles
 }
 
 .provider-best-for > h4 {
-  font-family: AvenirNext-Regular;
+  font-family: 'AvenirNext-Regular';
   font-size: 16px;
   color: #00416b;
-  font-weight: bold;
 }
 
 .provider-pros-cons-wrapper {
@@ -640,33 +643,13 @@ Top 3 Styles Styles
 }
 
 .provider-pros ul > li {
-  font-family: AvenirNext-Regular;
-  font-size: 16px;
-  line-height: 1.75;
+  font-family: 'AvenirNext-Regular';
   color: #00416b;
-}
-
-.provider-pros > b {
-  font-family: AvenirNext-Regular;
-  font-size: 16px;
-  line-height: 1.75;
-  color: #00416b;
-  font-weight: bold;
 }
 
 .provider-cons ul > li {
-  font-family: AvenirNext-Regular;
-  font-size: 16px;
-  line-height: 1.75;
+  font-family: 'AvenirNext-Regular';
   color: #00416b;
-}
-
-.provider-cons > b {
-  font-family: AvenirNext-Regular;
-  font-size: 16px;
-  line-height: 1.75;
-  color: #00416b;
-  font-weight: bold;
 }
 
 /* ==========================================================================
