@@ -506,6 +506,7 @@ Home Page Service Info Styles Styles
   flex-direction: column;
   align-items: center;
   background-color: #ebebeb;
+  padding: 32px 0;
 }
 
 .service-info-block-white {
@@ -513,6 +514,7 @@ Home Page Service Info Styles Styles
   flex: 1;
   flex-direction: column;
   align-items: center;
+  padding: 32px 0;
 }
 
 .basic-info-column-left {
@@ -539,7 +541,6 @@ Home Page Service Info Styles Styles
 .basic-list-wrapper {
   display: flex;
   flex-direction: column;
-  padding-bottom: 32px;
 }
 
 .fees-wrapper {
@@ -547,7 +548,6 @@ Home Page Service Info Styles Styles
   flex: 1;
   flex-direction: column;
   align-items: center;
-  padding: 53px 0;
 }
 
 .high-risk-wrapper {
@@ -555,7 +555,6 @@ Home Page Service Info Styles Styles
   flex: 1;
   flex-direction: column;
   align-items: center;
-  padding: 32px 0;
 }
 
 .high-risk-info {
@@ -577,7 +576,6 @@ Home Page Service Info Styles Styles
 .card-processors-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 32px 0;
 }
 
 .small-business-description-wrapper {
@@ -585,11 +583,6 @@ Home Page Service Info Styles Styles
   flex: 1;
   flex-direction: column;
   align-items: center;
-  padding: 53px 0;
-}
-
-.payment-gateways-wrapper {
-  padding: 32px 0;
 }
 
 /* ==========================================================================
