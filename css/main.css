@@ -653,15 +653,22 @@ ul.fa-ul {
 .service-info-wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 128px;
 }
 
-.service-info-box-one {
+.service-info-block-grey {
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: center;
   background-color: #ebebeb;
-  padding: 47px 0;
+}
+
+.service-info-block-white {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
 }
 
 .basic-header > h4 {
@@ -670,7 +677,8 @@ ul.fa-ul {
   color: #00416b;
 }
 
-.service-info-box-one .basic-info-wrapper-one {
+.basic-info-wrapper-one {
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
 }
@@ -678,10 +686,10 @@ ul.fa-ul {
 .basic-info-wrapper-two {
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
-.service-info-box-one .basic-wrapper-parent {
+.service-info-block-grey .basic-wrapper-parent {
   display: flex;
   align-content: center;
 }
@@ -690,17 +698,17 @@ ul.fa-ul {
   height: 180px;
 }
 
-.basic-info-wrapper-one .basic-quick-info > p {
+.basic-quick-info > p {
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.25;
-
   color: #00416b;
 }
 
 .basic-list-wrapper {
   display: flex;
   flex-direction: column;
+  padding-bottom: 33px;
 }
 
 .basic-list {
@@ -708,7 +716,7 @@ ul.fa-ul {
   flex-direction: column;
 }
 
-.basic-list-wrapper .basic-list-header > p {
+.basic-list-header > p {
   display: flex;
   flex: 1;
   font-weight: bold;
@@ -717,7 +725,7 @@ ul.fa-ul {
   color: #00416b;
 }
 
-.basic-list-wrapper .basic-list ul > li {
+.basic-list ul > li {
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 2;
@@ -725,28 +733,18 @@ ul.fa-ul {
   color: #00416b;
 }
 
-.service-info-box-two {
+.fees-wrapper {
   display: flex;
-  flex-direction: column;
   flex: 1;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fees-info {
   padding-bottom: 53px;
 }
 
-.fees-info > h2 {
-  padding: 44px;
-  margin-left: 181px;
-  font-family: AvenirNext-Medium;
-  font-size: 32px;
-  font-weight: 500;
-  text-align: left;
-  color: #69bd45;
-}
-
 .fees-info > p {
-  margin: 0 181px;
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.25;
@@ -758,7 +756,6 @@ ul.fa-ul {
   display: flex;
   flex-direction: flex-start;
   padding: 64px 0 31px;
-  margin-left: 181px;
   font-family: AvenirNext-Medium;
   font-size: 32px;
   font-weight: 500;
@@ -766,8 +763,6 @@ ul.fa-ul {
 }
 
 .fees-info > h3 {
-  margin-top: 0;
-  margin-left: 181px;
   font-family: AvenirNext-Medium;
   line-height: 60px;
   font-size: 24px;
@@ -776,24 +771,20 @@ ul.fa-ul {
   color: #69bd45;
 }
 
-.service-info-box-three {
+.high-risk-wrapper {
   display: flex;
-  flex: 1;
   flex-direction: column;
-  background-color: #ebebeb;
+  justify-content: center;
 }
 
-.high-risk-header > h4 {
-  padding: 28px 0 28px 0;
-  margin: 0 181px;
-  font-family: AvenirNext-Bold;
+.high-risk-header >h4 {
   font-size: 36px;
-  font-weight: bold;
+  font-family: AvenirNext-Bold;
   color: #00416b;
+  padding: 26px 0 26px 0;
 }
 
 .high-risk-description {
-  margin: 0 181px;
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.25;
@@ -802,7 +793,6 @@ ul.fa-ul {
 
 .high-risk-list {
   padding-bottom: 33px;
-  margin: 0 181px;
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.25;
@@ -810,41 +800,35 @@ ul.fa-ul {
   color: #00416b;
 }
 
-.service-info-box-four {
+.card-processors-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 55px 0 55px 0;
 }
 
-.card-processors-wrapper {
-  margin: 0 181px;
-}
-
-.card-processors-header > h4 {
-  padding: 54px 0 32px 0;
-  margin: 0 181px;
-  font-family: AvenirNext-Bold;
+.card-processors-header >h4 {
   font-size: 36px;
-  font-weight: bold;
+  font-family: AvenirNext-Bold;
   color: #00416b;
 }
 
-.card-processors-description {
-  margin: 0 181px;
+.card-processors-description >p {
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.25;
   color: #00416b;
 }
 
-.service-info-box-five {
-  display: flex;
-  flex-direction: column;
-  background: #ebebeb;
+.card-processors-list ul>li {
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  line-height: 2;
+  color: #00416b;
 }
 
 .small-business-header > h4 {
-  padding: 48px 0 25px 0;
-  margin: 0 181px;
+  padding: 54px 0 32px 0;
   font-family: AvenirNext-Bold;
   font-size: 36px;
   font-weight: bold;
@@ -852,11 +836,12 @@ ul.fa-ul {
 }
 
 .small-business-description-wrapper {
-  padding: 25px 0 53px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .small-business-description-one {
-  margin: 0 181px;
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.25;
@@ -864,20 +849,11 @@ ul.fa-ul {
 }
 
 .small-business-description-two {
-  margin: 0 181px;
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.25;
   color: #00416b;
-}
-
-.service-info-box-six {
-  display: flex;
-  flex-direction: column;
-}
-
-.payment-gateways {
-  margin: 0 181px;
+  padding-bottom: 53px;
 }
 
 .payment-gateways-header > h4 {
@@ -889,7 +865,7 @@ ul.fa-ul {
 }
 
 .payment-gateways-description > p {
-  padding-bottom: 60px;
+  padding: 0 0 60px 0;
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.25;
@@ -897,14 +873,14 @@ ul.fa-ul {
 }
 
 .top-three-providers {
-  margin: 0 181px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.top-three-providers-header > h3 {
-  padding-bottom: 30px;
-  font-family: AvenirNext-Bold;
+.top-three-providers-header > h4 {
   font-size: 36px;
-  font-weight: bold;
+  font-family: AvenirNext-Bold;
   color: #69bd45;
 }
 
@@ -965,7 +941,6 @@ ul.fa-ul {
 .provider-pros-cons-wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: 78px;
   padding-bottom: 43px;
 }
 
