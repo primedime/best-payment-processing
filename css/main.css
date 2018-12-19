@@ -216,10 +216,7 @@ Modify as content requires.
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -230,7 +227,6 @@ Modify as content requires.
    ========================================================================== */
 
 @media print {
-
   *,
   *:before,
   *:after {
@@ -248,11 +244,11 @@ Modify as content requires.
   }
 
   a[href]:after {
-    content: ' ('attr(href) ')';
+    content: ' (' attr(href) ')';
   }
 
   abbr[title]:after {
-    content: ' ('attr(title) ')';
+    content: ' (' attr(title) ')';
   }
 
   /*
@@ -327,19 +323,19 @@ Modify as content requires.
   padding: 0 10px;
 }
 
-.top-nav .logo>img {
+.top-nav .logo > img {
   width: 196px;
   height: 54px;
   object-fit: contain;
   padding: 10px;
 }
 
-.top-nav>ul {
+.top-nav > ul {
   display: flex;
   list-style: none;
 }
 
-.top-nav li>a {
+.top-nav li > a {
   color: #707070;
   font-size: 21px;
   font-weight: bold;
@@ -388,7 +384,7 @@ Modify as content requires.
   src: url(fonts/AvenirNext-UltraLightItalic-12.ttf) format('truetype');
 }
 
-.hero .hero-header>h1 {
+.hero .hero-header > h1 {
   font-family: AvenirNext-Bold;
   font-size: 48px;
   font-weight: bold;
@@ -401,7 +397,7 @@ Modify as content requires.
   color: #fff;
 }
 
-.hero .hero-description>p {
+.hero .hero-description > p {
   font-family: AvenirNext-Regular;
   font-size: 24px;
   font-weight: 500;
@@ -425,7 +421,7 @@ Modify as content requires.
   padding: 60px 0 60px 180px;
 }
 
-.box-wrapping .recommend-header>h2 {
+.box-wrapping .recommend-header > h2 {
   font-family: AvenirNext-Medium;
   font-size: 32px;
   font-weight: 500;
@@ -464,7 +460,7 @@ Modify as content requires.
   padding-bottom: 36px;
 }
 
-.ranking-logo>img {
+.ranking-logo > img {
   height: 57px;
   padding-bottom: 36px;
 }
@@ -473,7 +469,7 @@ Modify as content requires.
   padding-bottom: 21px;
 }
 
-.company-slogan>h4 {
+.company-slogan > h4 {
   font-family: AvenirNext-Medium;
   font-size: 24px;
   font-weight: 500;
@@ -494,11 +490,11 @@ Modify as content requires.
   padding: 0;
 }
 
-.ranking-stars ul>li {
+.ranking-stars ul > li {
   padding: 5px;
 }
 
-.ranking-stars ul li>img {
+.ranking-stars ul li > img {
   display: inline;
   text-decoration: none;
   display: flex;
@@ -512,7 +508,7 @@ Modify as content requires.
   padding-bottom: 23px;
 }
 
-.company-telephone>i {
+.company-telephone > i {
   padding: 5px;
   font-size: 26px;
   font-weight: normal;
@@ -520,7 +516,7 @@ Modify as content requires.
   color: #00416b;
 }
 
-.company-telephone>h3 {
+.company-telephone > h3 {
   font-family: AvenirNext-Regular;
   font-size: 24px;
   font-weight: normal;
@@ -528,7 +524,7 @@ Modify as content requires.
   color: #00416b;
 }
 
-.button-cta>button {
+.button-cta > button {
   display: flex;
 }
 
@@ -551,7 +547,7 @@ Modify as content requires.
   padding-bottom: 36px;
 }
 
-.company-name>h3 {
+.company-name > h3 {
   font-family: AvenirNext-Medium;
   font-size: 24px;
   font-weight: 500;
@@ -574,7 +570,7 @@ Modify as content requires.
   background-color: #69bd45;
 }
 
-.company-description>p {
+.company-description > p {
   font-family: AvenirNext-Medium;
   font-size: 14px;
   letter-spacing: 0.1px;
@@ -586,7 +582,7 @@ ul.fa-ul {
   margin: 0;
 }
 
-.company-pros-list ul>li {
+.company-pros-list ul > li {
   font-family: AvenirNext-Medium;
   line-height: 35px;
   font-size: 16px;
@@ -594,7 +590,7 @@ ul.fa-ul {
   color: #00416b;
 }
 
-.company-pros-list ul li>i {
+.company-pros-list ul li > i {
   color: #45b5d0;
 }
 
@@ -608,7 +604,7 @@ ul.fa-ul {
   margin: 0 20px;
 }
 
-.blog-item>hr {
+.blog-item > hr {
   background-color: #00416b;
 }
 
@@ -617,7 +613,7 @@ ul.fa-ul {
   flex-direction: column;
 }
 
-.blog-column>.social-icons {
+.blog-column > .social-icons {
   color: #00416b;
   text-align: center;
   font-size: 45px;
@@ -625,11 +621,11 @@ ul.fa-ul {
   padding-top: 28px;
 }
 
-.social-icons>a {
+.social-icons > a {
   color: #00416b;
 }
 
-.blog-column .blog-snippet>h2 {
+.blog-column .blog-snippet > h2 {
   font-size: 30px;
   line-height: 100px;
   font-family: AvenirNext-Medium;
@@ -637,19 +633,19 @@ ul.fa-ul {
   color: #00416b;
 }
 
-.blog-column .blog-snippet>p {
+.blog-column .blog-snippet > p {
   font-size: 16px;
   font-family: AvenirNext-Medium;
   color: #00416b;
 }
 
-.blog-column .blog-details>p {
+.blog-column .blog-details > p {
   font-size: 16px;
   font-family: AvenirNext-Regular;
   color: #00416b;
 }
 
-.blog-column .blog-details>a {
+.blog-column .blog-details > a {
   font-weight: bold;
   color: #00416b;
 }
@@ -657,20 +653,19 @@ ul.fa-ul {
 .service-info-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .service-info-box-one {
   display: flex;
   flex: 1;
   flex-direction: column;
+  align-items: center;
   background-color: #ebebeb;
+  padding: 47px 0;
 }
 
-.basic-header>h4 {
-  padding: 47px 0 43px 0;
+.basic-header > h4 {
   font-size: 36px;
-  margin-left: 181px;
   font-family: AvenirNext-Bold;
   color: #00416b;
 }
@@ -682,24 +677,30 @@ ul.fa-ul {
 
 .basic-info-wrapper-two {
   display: flex;
-  flex-direction: column;
-  padding: 77px 158px 18px 20px;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .service-info-box-one .basic-wrapper-parent {
   display: flex;
+  align-content: center;
 }
 
-.basic-info-wrapper-two .basic-info-img>img {
+.basic-info-wrapper-two .basic-info-img > img {
   height: 180px;
 }
 
-.basic-info-wrapper-one .basic-quick-info>p {
+.basic-info-wrapper-one .basic-quick-info > p {
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.25;
-  margin-left: 181px;
+
   color: #00416b;
+}
+
+.basic-list-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .basic-list {
@@ -707,26 +708,20 @@ ul.fa-ul {
   flex-direction: column;
 }
 
-.basic-list-wrapper {
-  padding-bottom: 33px;
-}
-
-.basic-list-wrapper .basic-list-header>p {
+.basic-list-wrapper .basic-list-header > p {
   display: flex;
   flex: 1;
   font-weight: bold;
   font-size: 21px;
   line-height: 20px;
-  margin-left: 181px;
   color: #00416b;
 }
 
-.basic-list-wrapper .basic-list ul>li {
+.basic-list-wrapper .basic-list ul > li {
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 2;
   text-align: left;
-  margin-left: 160px;
   color: #00416b;
 }
 
@@ -740,7 +735,7 @@ ul.fa-ul {
   padding-bottom: 53px;
 }
 
-.fees-info>h2 {
+.fees-info > h2 {
   padding: 44px;
   margin-left: 181px;
   font-family: AvenirNext-Medium;
@@ -750,7 +745,7 @@ ul.fa-ul {
   color: #69bd45;
 }
 
-.fees-info>p {
+.fees-info > p {
   margin: 0 181px;
   font-family: AvenirNext-Regular;
   font-size: 16px;
@@ -759,7 +754,7 @@ ul.fa-ul {
   color: #00416b;
 }
 
-.fees-info>h4 {
+.fees-info > h4 {
   display: flex;
   flex-direction: flex-start;
   padding: 64px 0 31px;
@@ -770,7 +765,7 @@ ul.fa-ul {
   color: #69bd45;
 }
 
-.fees-info>h3 {
+.fees-info > h3 {
   margin-top: 0;
   margin-left: 181px;
   font-family: AvenirNext-Medium;
@@ -788,7 +783,7 @@ ul.fa-ul {
   background-color: #ebebeb;
 }
 
-.high-risk-header>h4 {
+.high-risk-header > h4 {
   padding: 28px 0 28px 0;
   margin: 0 181px;
   font-family: AvenirNext-Bold;
@@ -824,7 +819,7 @@ ul.fa-ul {
   margin: 0 181px;
 }
 
-.card-processors-header>h4 {
+.card-processors-header > h4 {
   padding: 54px 0 32px 0;
   margin: 0 181px;
   font-family: AvenirNext-Bold;
@@ -847,7 +842,7 @@ ul.fa-ul {
   background: #ebebeb;
 }
 
-.small-business-header>h4 {
+.small-business-header > h4 {
   padding: 48px 0 25px 0;
   margin: 0 181px;
   font-family: AvenirNext-Bold;
@@ -885,7 +880,7 @@ ul.fa-ul {
   margin: 0 181px;
 }
 
-.payment-gateways-header>h4 {
+.payment-gateways-header > h4 {
   padding: 58px 0 24px 0;
   font-family: AvenirNext-Bold;
   font-size: 36px;
@@ -893,7 +888,7 @@ ul.fa-ul {
   color: #00416b;
 }
 
-.payment-gateways-description>p {
+.payment-gateways-description > p {
   padding-bottom: 60px;
   font-family: AvenirNext-Regular;
   font-size: 16px;
@@ -905,7 +900,7 @@ ul.fa-ul {
   margin: 0 181px;
 }
 
-.top-three-providers-header>h3 {
+.top-three-providers-header > h3 {
   padding-bottom: 30px;
   font-family: AvenirNext-Bold;
   font-size: 36px;
@@ -913,12 +908,12 @@ ul.fa-ul {
   color: #69bd45;
 }
 
-.provider-logo>img {
+.provider-logo > img {
   height: 44px;
   padding-bottom: 24px;
 }
 
-.provider-name>h4 {
+.provider-name > h4 {
   padding-bottom: 30px;
   font-family: AvenirNext-Regular;
   font-size: 24px;
@@ -931,7 +926,7 @@ ul.fa-ul {
   padding-bottom: 54px;
 }
 
-.provider-get-quote-button>button {
+.provider-get-quote-button > button {
   width: 251px;
   height: 51px;
   background-color: #69bd45;
@@ -948,14 +943,14 @@ ul.fa-ul {
   flex: 1;
 }
 
-.provider-best-for>p {
+.provider-best-for > p {
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.25;
   color: #00416b;
 }
 
-.provider-best-for>h4 {
+.provider-best-for > h4 {
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.25;
@@ -963,7 +958,7 @@ ul.fa-ul {
   font-weight: bold;
 }
 
-.provider-best-for>a {
+.provider-best-for > a {
   color: #00416b;
 }
 
@@ -974,14 +969,14 @@ ul.fa-ul {
   padding-bottom: 43px;
 }
 
-.provider-pros ul>li {
+.provider-pros ul > li {
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.75;
   color: #00416b;
 }
 
-.provider-pros>b {
+.provider-pros > b {
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.75;
@@ -989,14 +984,14 @@ ul.fa-ul {
   font-weight: bold;
 }
 
-.provider-cons ul>li {
+.provider-cons ul > li {
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.75;
   color: #00416b;
 }
 
-.provider-cons>b {
+.provider-cons > b {
   font-family: AvenirNext-Regular;
   font-size: 16px;
   line-height: 1.75;
@@ -1014,17 +1009,17 @@ ul.fa-ul {
   padding: 40px;
 }
 
-.footer .logo>img {
+.footer .logo > img {
   width: 203px;
   height: 55px;
   object-fit: contain;
 }
 
-footer>.copyright-text {
+footer > .copyright-text {
   text-align: center;
 }
 
-footer .links>ul {
+footer .links > ul {
   display: flex;
   list-style: none;
 }
@@ -1034,7 +1029,7 @@ footer li {
   margin-right: 10px;
 }
 
-footer li>a {
+footer li > a {
   text-decoration: none;
   color: #ebebeb;
 }
