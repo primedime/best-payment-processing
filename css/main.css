@@ -258,15 +258,14 @@ Hero Styles
 
 .hero {
   display: flex;
+  justify-content: center;
   flex: 1;
-  max-height: 600px;
+  min-height: 600px;
   flex-direction: column;
-  align-items: center;
   background-image: url(/img/hero-background.png);
   background-color: #00416b;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 120px;
 }
 
 .hero .hero-header > h1 {
@@ -289,13 +288,14 @@ Home Page We Recommend Body Styles Styles
   display: flex;
   flex: 1;
   flex-direction: column;
+  align-items: center;
+  padding: 60px 11%;
 }
 
 .recommend-header {
   display: flex;
-  flex: 1;
-  justify-content: flex-start;
-  padding: 60px 0 60px 180px;
+  align-self: flex-start;
+  padding-bottom: 60px;
 }
 
 .box-wrapping .recommend-header > h2 {
@@ -309,27 +309,28 @@ Home Page We Recommend Body Styles Styles
 .box-wrapping-columns {
   display: flex;
   justify-content: center;
-  padding-bottom: 128px;
 }
 
 .ranking-column {
   display: flex;
   flex-direction: column;
+  flex-basis: 800px;
 }
 
 .company-left {
   display: flex;
   flex-direction: column;
-  padding-right: 80px;
+  flex-basis: 252px;
+  padding-right: 78px;
 }
 
 .company-right {
   display: flex;
   flex-direction: column;
+  flex: 2;
 }
 
 .rating-wrapper {
-  flex: 1;
   justify-content: flex-start;
   display: flex;
   flex-direction: column;
@@ -455,6 +456,7 @@ ul.fa-ul {
   background: rgb(234, 245, 250);
   display: flex;
   flex-direction: column;
+  flex-basis: 300px;
 }
 
 .blog-item {
@@ -506,7 +508,7 @@ Home Page Service Info Styles Styles
   flex-direction: column;
   align-items: center;
   background-color: #ebebeb;
-  padding: 32px 0;
+  padding: 32px 11%;
 }
 
 .service-info-block-white {
@@ -514,7 +516,7 @@ Home Page Service Info Styles Styles
   flex: 1;
   flex-direction: column;
   align-items: center;
-  padding: 32px 0;
+  padding: 32px 11%;
 }
 
 .basic-info-column-left {
@@ -592,6 +594,7 @@ Top 3 Styles Styles
 .top-three-providers {
   display: flex;
   flex-direction: column;
+  padding: 0 11%;
 }
 
 .provider-logo > img {
