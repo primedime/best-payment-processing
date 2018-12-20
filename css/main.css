@@ -148,6 +148,10 @@ h2.blue-bold {
   font-size: 36px;
 }
 
+h2.blue-bold-small {
+  font-size: 24px;
+}
+
 h2.blue-light {
   font-size: 24px;
   font-family: 'AvenirNext-Medium';
@@ -594,10 +598,6 @@ Home Page Service Info Styles Styles
   align-items: center;
 }
 
-.faq-wrapper {
-  padding: 100px 0 0 0;
-}
-
 /* ==========================================================================
 Top 3 Styles Styles
 ========================================================================== */
@@ -657,6 +657,26 @@ Top 3 Styles Styles
 .provider-cons ul > li {
   font-family: 'AvenirNext-Regular';
   color: #00416b;
+}
+
+/* ==========================================================================
+Top 3 Styles Styles
+========================================================================== */
+
+.faq-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.faq-question {
+  padding: 20px 0 12px 58px;
+}
+
+.faq-question:hover {
+  background-color: #ebebeb;
+  color: red;
 }
 
 /* ==========================================================================
