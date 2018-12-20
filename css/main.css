@@ -31,7 +31,7 @@ Base styles: opinionated defaults
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: calc(0.5em + 1vw);
   line-height: 1.4;
   animation: fadeIn 1s ease-in-out;
   height: 100%;
@@ -145,41 +145,41 @@ h6 {
 }
 
 h2.blue-bold {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 h2.blue-bold-small {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h2.blue-light {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: 'AvenirNext-Medium';
   font-weight: 500;
   color: #00416b;
 }
 
 h2.green-bold {
-  font-size: 32px;
+  font-size: 2rem;
   color: #69bd45;
 }
 
 h2.green-medium {
   font-family: 'AvenirNext-Medium';
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 500;
   color: #69bd45;
 }
 
 h3.green-medium {
   font-family: 'AvenirNext-Medium';
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #69bd45;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'AvenirNext-Regular';
   color: #00416b;
 }
@@ -208,7 +208,7 @@ Button Styles
 
 .quote-button {
   background-color: #45b5d0;
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: bold;
   letter-spacing: 0.2px;
   color: #ffffff;
@@ -234,7 +234,7 @@ Navigation Styles
   padding: 0 10px;
 }
 
-.top-nav .logo > img {
+.top-nav .logo a > img {
   width: 196px;
   height: 54px;
   object-fit: contain;
@@ -248,11 +248,18 @@ Navigation Styles
 
 .top-nav li > a {
   color: #707070;
-  font-size: 21px;
+  font-size: 1rem;
   font-weight: bold;
-  padding: 0 60px 0 0;
+  padding: 0 1.15rem 0 0;
   text-decoration: none;
   display: inline-block;
+}
+
+@media only screen and (max-width: 1024px) {
+  .top-nav li > a {
+    font-size: 0.9rem;
+    padding: 0 1.1rem 0 0;
+  }
 }
 
 .top-nav a:hover {
@@ -271,7 +278,7 @@ Hero Styles
   display: flex;
   justify-content: center;
   flex: 1;
-  min-height: 600px;
+  min-height: 28rem;
   flex-direction: column;
   background-image: url(/img/hero-background.png);
   background-color: #00416b;
@@ -279,14 +286,40 @@ Hero Styles
   background-size: cover;
 }
 
+.hero-header {
+  padding: 0 11rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-header {
+    padding: 0 7rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .hero-header {
+    padding: 0 0.5rem;
+  }
+}
+
 .hero .hero-header > h1 {
-  font-size: 48px;
+  font-size: 2.5rem;
   text-align: center;
   color: #fff;
 }
 
+.hero-description {
+  padding: 0 3.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-description {
+    padding: 0 2rem;
+  }
+}
+
 .hero .hero-description > p {
-  font-size: 24px;
+  font-size: 1.2rem;
   text-align: center;
   color: #fff;
 }
@@ -311,7 +344,7 @@ Home Page We Recommend Body Styles Styles
 
 .box-wrapping .recommend-header > h2 {
   font-family: 'AvenirNext-Medium';
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.32px;
   color: #69bd45;
@@ -360,7 +393,7 @@ Home Page We Recommend Body Styles Styles
 
 .company-slogan > h4 {
   font-family: 'AvenirNext-Medium';
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.2px;
   color: #00416b;
@@ -395,13 +428,13 @@ Home Page We Recommend Body Styles Styles
 
 .company-telephone > i {
   padding: 5px;
-  font-size: 26px;
+  font-size: 1.625rem;
   color: #00416b;
 }
 
 .company-telephone > h3 {
   font-family: 'AvenirNext-Regular';
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: normal;
   letter-spacing: 0.2px;
   color: #00416b;
@@ -419,7 +452,7 @@ Home Page We Recommend Body Styles Styles
 
 .company-name > h3 {
   font-family: 'AvenirNext-Medium';
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.2px;
   color: #00416b;
@@ -428,7 +461,7 @@ Home Page We Recommend Body Styles Styles
 .rating {
   font-weight: bold;
   font-family: 'AvenirNext-Bold';
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.2px;
   color: #00416b;
@@ -442,7 +475,7 @@ Home Page We Recommend Body Styles Styles
 
 .company-description > p {
   font-family: 'AvenirNext-Medium';
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0.1px;
   color: #00416b;
 }
@@ -460,7 +493,7 @@ ul.fa-ul {
 
 .company-pros-list ul li > i {
   color: #45b5d0;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .blog-column {
@@ -486,13 +519,13 @@ ul.fa-ul {
 .blog-column > .social-icons {
   color: #00416b;
   text-align: center;
-  font-size: 45px;
+  font-size: 2.813rem;
   letter-spacing: 10px;
   padding-top: 28px;
 }
 
 .blog-column .blog-snippet > h2 {
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 100px;
   font-family: 'AvenirNext-Medium';
   font-weight: 400;
@@ -616,7 +649,7 @@ Top 3 Styles
 .provider-name > h3 {
   padding-bottom: 30px;
   font-family: 'AvenirNext-Regular';
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
   color: #00416b;
 }
@@ -639,7 +672,7 @@ Top 3 Styles
 
 .provider-best-for > h4 {
   font-family: 'AvenirNext-Regular';
-  font-size: 16px;
+  font-size: 1rem;
   color: #00416b;
 }
 
