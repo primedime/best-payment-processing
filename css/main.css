@@ -713,6 +713,69 @@ FAQ Styles
 }
 
 /* ==========================================================================
+Comparison Styles
+========================================================================== */
+
+.comparison-wrapper {
+  display: flex;
+  padding-bottom: 3rem;
+}
+
+.child-comparison-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-column {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #ebebeb;
+  padding: 4.5rem;
+}
+
+.vertical-column i {
+  padding: 2.8rem 0 2.8rem 0;
+  color: #69bd45;
+}
+
+.vertical-side-column {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13rem; 
+  align-items: center;
+  border: solid 1px #ebebeb;
+}
+
+.vertical-side-column h2.blue-light {
+  padding: 2.5rem 1rem 2.5rem 1rem;
+}
+
+.horizontal-row-wrapper {
+  display: flex;
+  background-color: #ebebeb;
+}
+
+.comparison-company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.comparison-company .ranking-logo img {
+  padding: 1.5rem .8rem 1.5rem .8rem;
+}
+
+.comparison-company a {
+  padding: .5rem 0 2rem 0;
+}
+
+.bottom-column-wrapper {
+  display: flex;
+}
+
+
+/* ==========================================================================
 Footer Styles Styles
 ========================================================================== */
 
