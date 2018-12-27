@@ -11,23 +11,23 @@ Custom Font - Avenir Next
 ========================================================================== */
 
 @font-face {
-  font-family: 'AvenierNext-Bold';
-  src: url(fonts/AvenirNext-Bold.ttf) format('truetype');
+  font-family: "AvenierNext-Bold";
+  src: url(fonts/AvenirNext-Bold.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'AvenirNext-Medium';
-  src: url(fonts/AvenirNext-Medium-06.ttf) format('truetype');
+  font-family: "AvenirNext-Medium";
+  src: url(fonts/AvenirNext-Medium-06.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'AvenirNext-Regular';
-  src: url(fonts/AvenirNext-Regular-08.ttf) format('truetype');
+  font-family: "AvenirNext-Regular";
+  src: url(fonts/AvenirNext-Regular-08.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'AvenirNext-Italic';
-  src: url(fonts/AvenirNext-Italic-05.ttf) format('truetype');
+  font-family: "AvenirNext-Italic";
+  src: url(fonts/AvenirNext-Italic-05.ttf) format("truetype");
 }
 
 /* ==========================================================================
@@ -47,7 +47,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'AvenirNext-Regular', Arial, Helvetica, sans-serif;
+  font-family: "AvenirNext-Regular", Arial, Helvetica, sans-serif;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -145,7 +145,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: 'AvenirNext-Bold';
+  font-family: "AvenirNext-Bold";
   color: #00416b;
 }
 
@@ -159,7 +159,7 @@ h2.blue-bold-small {
 
 h2.blue-light {
   font-size: 1.5rem;
-  font-family: 'AvenirNext-Medium';
+  font-family: "AvenirNext-Medium";
   font-weight: 500;
   color: #00416b;
 }
@@ -170,14 +170,14 @@ h2.green-bold {
 }
 
 h2.green-medium {
-  font-family: 'AvenirNext-Medium';
+  font-family: "AvenirNext-Medium";
   font-size: 2rem;
   font-weight: 500;
   color: #69bd45;
 }
 
 h3.green-medium {
-  font-family: 'AvenirNext-Medium';
+  font-family: "AvenirNext-Medium";
   font-size: 1.5rem;
   font-weight: 500;
   color: #69bd45;
@@ -185,7 +185,7 @@ h3.green-medium {
 
 p {
   font-size: 1rem;
-  font-family: 'AvenirNext-Regular';
+  font-family: "AvenirNext-Regular";
   color: #00416b;
 }
 
@@ -197,7 +197,7 @@ a.link-bold {
   font-weight: 700;
 }
 
-ul>li {
+ul > li {
   color: #00416b;
   line-height: 2;
 }
@@ -206,14 +206,33 @@ ul>li {
 Button Styles
 ========================================================================== */
 
-.button-cta>button {
+@media only screen and (max-width: 414px) {
+  .button-cta > button {
+    margin-top: 2.5rem;
+    padding: 1rem;
+  }
+  
+  .quote-button {
+    background-color: #45b5d0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+  }
+  
+  .quote-button.green {
+    background-color: #69bd45;
+  }  
+}
+
+.button-cta > button {
   border: none;
   margin-bottom: 54px;
 }
 
 .quote-button {
   background-color: #45b5d0;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 0.2px;
   color: #ffffff;
@@ -239,19 +258,26 @@ Navigation Styles
   padding: 0 10px;
 }
 
-.top-nav .logo a>img {
-  width: 196px;
-  height: 54px;
+.top-nav .logo a > img {
+  height: 2rem;
   object-fit: contain;
   padding: 10px;
 }
 
-.top-nav>ul {
+@media only screen and (max-width: 414px) {
+  .top-nav .logo a > img {
+    height: 3rem;
+    object-fit: contain;
+    padding: 10px;
+  }
+}
+
+.top-nav > ul {
   display: flex;
   list-style: none;
 }
 
-.top-nav li>a {
+.top-nav li > a {
   color: #707070;
   font-size: 1rem;
   font-weight: bold;
@@ -261,7 +287,7 @@ Navigation Styles
 }
 
 @media only screen and (max-width: 1024px) {
-  .top-nav li>a {
+  .top-nav li > a {
     font-size: 0.9rem;
     padding: 0 1.1rem 0 0;
   }
@@ -307,7 +333,7 @@ Hero Styles
   }
 }
 
-.hero .hero-header>h1 {
+.hero .hero-header > h1 {
   font-size: 2.5rem;
   text-align: center;
   color: #fff;
@@ -323,7 +349,7 @@ Hero Styles
   }
 }
 
-.hero .hero-description>p {
+.hero .hero-description > p {
   font-size: 1.2rem;
   text-align: center;
   color: #fff;
@@ -332,6 +358,57 @@ Hero Styles
 /* ==========================================================================
 Home Page We Recommend Body Styles Styles
 ========================================================================== */
+
+@media only screen and (max-width: 414px) {
+  .ranking-box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80rem;
+  }
+
+  .company-left {
+    display: flex;
+    flex-basis: 20rem;
+    padding: 0 5rem 10rem 0;
+  }
+
+  .company-right {
+    display: flex;
+    flex: 2;
+  }
+
+  .box-wrapping-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .rating-wrapper {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 36px;
+  }
+
+  .rating {
+    font-weight: bold;
+    font-family: "AvenirNext-Bold";
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    padding-right: 23.9rem;
+    color: #00416b;
+  }
+
+  .blog-column .blog-snippet > h2 {
+    font-size: 1rem;
+    line-height: 4rem !important;
+    font-family: "AvenirNext-Medium";
+    font-weight: 400;
+    color: #00416b;
+  }
+
+}
 
 .box-wrapping {
   display: flex;
@@ -347,8 +424,8 @@ Home Page We Recommend Body Styles Styles
   padding-bottom: 60px;
 }
 
-.box-wrapping .recommend-header>h2 {
-  font-family: 'AvenirNext-Medium';
+.box-wrapping .recommend-header > h2 {
+  font-family: "AvenirNext-Medium";
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.32px;
@@ -387,7 +464,7 @@ Home Page We Recommend Body Styles Styles
   padding-bottom: 36px;
 }
 
-.ranking-logo>img {
+.ranking-logo > img {
   height: 57px;
   padding-bottom: 36px;
 }
@@ -396,8 +473,8 @@ Home Page We Recommend Body Styles Styles
   padding-bottom: 21px;
 }
 
-.company-slogan>h4 {
-  font-family: 'AvenirNext-Medium';
+.company-slogan > h4 {
+  font-family: "AvenirNext-Medium";
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.2px;
@@ -416,11 +493,11 @@ Home Page We Recommend Body Styles Styles
   padding: 0;
 }
 
-.ranking-stars ul>li {
+.ranking-stars ul > li {
   padding: 5px;
 }
 
-.ranking-stars ul li>img {
+.ranking-stars ul li > img {
   display: flex;
   height: 17px;
   color: #dabf27;
@@ -431,14 +508,14 @@ Home Page We Recommend Body Styles Styles
   padding-bottom: 23px;
 }
 
-.company-telephone>i {
+.company-telephone > i {
   padding: 5px;
   font-size: 1.625rem;
   color: #00416b;
 }
 
-.company-telephone>h3 {
-  font-family: 'AvenirNext-Regular';
+.company-telephone > h3 {
+  font-family: "AvenirNext-Regular";
   font-size: 1.5rem;
   font-weight: normal;
   letter-spacing: 0.2px;
@@ -455,8 +532,8 @@ Home Page We Recommend Body Styles Styles
   padding-bottom: 36px;
 }
 
-.company-name>h3 {
-  font-family: 'AvenirNext-Medium';
+.company-name > h3 {
+  font-family: "AvenirNext-Medium";
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.2px;
@@ -465,7 +542,7 @@ Home Page We Recommend Body Styles Styles
 
 .rating {
   font-weight: bold;
-  font-family: 'AvenirNext-Bold';
+  font-family: "AvenirNext-Bold";
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.2px;
@@ -478,8 +555,8 @@ Home Page We Recommend Body Styles Styles
   background-color: #69bd45;
 }
 
-.company-description>p {
-  font-family: 'AvenirNext-Medium';
+.company-description > p {
+  font-family: "AvenirNext-Medium";
   font-size: 0.875rem;
   letter-spacing: 0.1px;
   color: #00416b;
@@ -489,14 +566,14 @@ ul.fa-ul {
   margin: 0;
 }
 
-.company-pros-list ul>li {
-  font-family: 'AvenirNext-Medium';
+.company-pros-list ul > li {
+  font-family: "AvenirNext-Medium";
   line-height: 35px;
   letter-spacing: 0.2px;
   color: #00416b;
 }
 
-.company-pros-list ul li>i {
+.company-pros-list ul li > i {
   color: #45b5d0;
   font-size: 1.25rem;
 }
@@ -512,7 +589,7 @@ ul.fa-ul {
   margin: 0 20px;
 }
 
-.blog-item>hr {
+.blog-item > hr {
   background-color: #00416b;
 }
 
@@ -521,7 +598,7 @@ ul.fa-ul {
   flex-direction: column;
 }
 
-.blog-column>.social-icons {
+.blog-column > .social-icons {
   color: #00416b;
   text-align: center;
   font-size: 2.813rem;
@@ -529,15 +606,15 @@ ul.fa-ul {
   padding-top: 28px;
 }
 
-.blog-column .blog-snippet>h2 {
+.blog-column .blog-snippet > h2 {
   font-size: 1.875rem;
   line-height: 100px;
-  font-family: 'AvenirNext-Medium';
+  font-family: "AvenirNext-Medium";
   font-weight: 400;
   color: #00416b;
 }
 
-.blog-column .blog-snippet>p {
+.blog-column .blog-snippet > p {
   font-family: AvenirNext-Medium;
   color: #00416b;
 }
@@ -545,6 +622,25 @@ ul.fa-ul {
 /* ==========================================================================
 Home Page Service Info Styles Styles
 ========================================================================== */
+
+@media only screen and (max-width: 414px) {
+  .basic-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 32px 0;
+  }
+  
+  .basic-info-column-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .basic-info-img > img {
+    height: 20rem;
+  }
+
+}
 
 .service-info-wrapper {
   display: flex;
@@ -585,8 +681,8 @@ Home Page Service Info Styles Styles
   padding: 32px 0;
 }
 
-.basic-info-column-right .basic-info-img>img {
-  height: 180px;
+.basic-info-column-right .basic-info-img > img {
+  height: 7rem;
 }
 
 .basic-list-wrapper {
@@ -640,20 +736,44 @@ Home Page Service Info Styles Styles
 Top 3 Styles
 ========================================================================== */
 
+@media only screen and (max-width: 414px) {
+  .provider-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .provider-pros-cons-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 2rem;
+  }
+
+  .provider-name > h3 {
+    margin-top: 1rem;
+    font-family: "AvenirNext-Regular";
+    font-size: 1rem;
+    font-weight: 300;
+    color: #00416b;
+  }
+  
+}
+
 .top-three-providers {
   display: flex;
   flex-direction: column;
   padding: 0 11%;
 }
 
-.provider-logo>img {
+.provider-logo > img {
   height: 44px;
   padding-bottom: 24px;
 }
 
-.provider-name>h3 {
+.provider-name > h3 {
   padding-bottom: 30px;
-  font-family: 'AvenirNext-Regular';
+  font-family: "AvenirNext-Regular";
   font-size: 1.5rem;
   font-weight: 300;
   color: #00416b;
@@ -675,8 +795,8 @@ Top 3 Styles
   flex: 1;
 }
 
-.provider-best-for>h4 {
-  font-family: 'AvenirNext-Regular';
+.provider-best-for > h4 {
+  font-family: "AvenirNext-Regular";
   font-size: 1rem;
   color: #00416b;
 }
@@ -687,13 +807,13 @@ Top 3 Styles
   flex: 1;
 }
 
-.provider-pros ul>li {
-  font-family: 'AvenirNext-Regular';
+.provider-pros ul > li {
+  font-family: "AvenirNext-Regular";
   color: #00416b;
 }
 
-.provider-cons ul>li {
-  font-family: 'AvenirNext-Regular';
+.provider-cons ul > li {
+  font-family: "AvenirNext-Regular";
   color: #00416b;
 }
 
@@ -738,7 +858,7 @@ Comparison Styles
   padding: 4.5rem;
 }
 
-.vertical-column>i {
+.vertical-column > i {
   padding: 2.5rem 0 2.5rem 0;
   color: #69bd45;
 }
@@ -751,7 +871,7 @@ Comparison Styles
   border: solid 1px #ebebeb;
 }
 
-.vertical-side-column>h2.blue-light {
+.vertical-side-column > h2.blue-light {
   padding: 2.5rem 1rem 2.5rem 1rem;
 }
 
@@ -767,12 +887,12 @@ Comparison Styles
   align-content: center;
 }
 
-.comparison-company>.ranking-logo img {
-  padding: 1.5rem .8rem 1.5rem .8rem;
+.comparison-company > .ranking-logo img {
+  padding: 1.5rem 0.8rem 1.5rem 0.8rem;
 }
 
-.comparison-company>a {
-  padding: .5rem 0 2rem 0;
+.comparison-company > a {
+  padding: 0.5rem 0 2rem 0;
 }
 
 .bottom-column-wrapper {
@@ -791,6 +911,17 @@ Learn Styles
   justify-content: center;
 }
 
+@media only screen and (max-width: 414px) {
+  .box-wrapping-row {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    padding: 4rem 11%;
+    justify-content: center;
+  }  
+}
+
 .left-column-wrapper {
   display: flex;
   flex-direction: column;
@@ -807,27 +938,27 @@ Learn Styles
   display: flex;
 }
 
-.box-left-column>h2.blue-bold-small {
+.box-left-column > h2.blue-bold-small {
   font-size: 28px;
   line-height: 32px;
 }
 
-.box-left-column>p.date {
-  font-size: .6rem;
+.box-left-column > p.date {
+  font-size: 0.6rem;
   font-style: italic;
   line-height: 1.88;
 }
 
-.box-left-column>p.description {
-  font-size: .7rem;
+.box-left-column > p.description {
+  font-size: 0.7rem;
   line-height: 1rem;
 }
 
-.box-left-column>a {
-  font-size: .7rem;
+.box-left-column > a {
+  font-size: 0.7rem;
 }
 
-.box-left-wrapper>img {
+.box-left-wrapper > img {
   height: 10rem;
   object-fit: contain;
   padding: 2rem 1rem 1rem 2rem;
@@ -840,14 +971,21 @@ Learn Styles
   padding: 1rem;
 }
 
+@media only screen and (max-width: 414px) {
+  .box-left-column > h2.blue-bold-small {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+}
+
 .right-column-wrapper {
   display: flex;
   flex-direction: column;
   padding-top: 6rem;
-  padding-left: .8rem;
+  padding-left: 0.8rem;
 }
 
-.right-column-wrapper>h3.green-medium {
+.right-column-wrapper > h3.green-medium {
   font-size: 1.3rem;
   line-height: 1.14;
   display: flex;
@@ -858,10 +996,10 @@ Learn Styles
   width: 20rem;
   display: flex;
   background-color: #f6f6f6;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
-.box-right>img {
+.box-right > img {
   width: 7rem;
   object-fit: contain;
   padding: 0 2rem 1rem 1rem;
@@ -874,12 +1012,12 @@ Learn Styles
   padding: 2.1rem 1rem 2rem 0;
 }
 
-.box-right-column>a {
-  font-size: .7rem;
-} 
+.box-right-column > a {
+  font-size: 0.7rem;
+}
 
-.box-right-column .button-cta>button {
-  font-size: .7rem;
+.box-right-column .button-cta > button {
+  font-size: 0.7rem;
 }
 
 /* ==========================================================================
@@ -896,18 +1034,26 @@ Footer Styles Styles
   padding: 40px 0;
 }
 
-.footer .logo>img {
+.footer .logo > img {
   width: 203px;
 }
 
-.copyright-text>p {
+.copyright-text > p {
   text-align: center;
   color: #fff;
 }
 
-footer .links>ul {
+footer .links > ul {
   display: flex;
   list-style: none;
+}
+
+@media only screen and (max-width: 414px) {
+  footer .links > ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+  }
 }
 
 footer li {
@@ -915,7 +1061,7 @@ footer li {
   margin-right: 10px;
 }
 
-footer li>a {
+footer li > a {
   text-decoration: none;
   color: #ebebeb;
 }
@@ -992,7 +1138,7 @@ Helper classes
 
 .clearfix:before,
 .clearfix:after {
-  content: ' ';
+  content: " ";
   /* 1 */
   display: table;
   /* 2 */
@@ -1013,9 +1159,9 @@ Modify as content requires.
 }
 
 @media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -1026,7 +1172,6 @@ Modify as content requires.
    ========================================================================== */
 
 @media print {
-
   *,
   *:before,
   *:after {
@@ -1044,11 +1189,11 @@ Modify as content requires.
   }
 
   a[href]:after {
-    content: ' ('attr(href) ')';
+    content: " (" attr(href) ")";
   }
 
   abbr[title]:after {
-    content: ' ('attr(title) ')';
+    content: " (" attr(title) ")";
   }
 
   /*
@@ -1056,9 +1201,9 @@ Modify as content requires.
      * or use the `javascript:` pseudo protocol
      */
 
-  a[href^='#']:after,
-  a[href^='javascript:']:after {
-    content: '';
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
   }
 
   pre {
