@@ -787,7 +787,7 @@ Learn Styles
   display: flex;
   flex: 1;
   align-items: center;
-  padding: 60px 11%;
+  padding: 4rem 11%;
   justify-content: center;
 }
 
@@ -813,7 +813,7 @@ Learn Styles
 }
 
 .box-left-column>p.date {
-  font-size: 16px;
+  font-size: .6rem;
   font-style: italic;
   line-height: 1.88;
 }
@@ -827,14 +827,14 @@ Learn Styles
   font-size: .7rem;
 }
 
-.box-left>img {
-  width: 288px;
+.box-left-wrapper>img {
+  height: 10rem;
   object-fit: contain;
-  padding-left: 1rem;
+  padding: 2rem 1rem 1rem 2rem;
 }
 
 .box-left-column {
-  width: 328px;
+  width: 14rem;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -843,22 +843,26 @@ Learn Styles
 .right-column-wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 138px;
-  padding-left: 18px;
+  padding-top: 6rem;
+  padding-left: .8rem;
 }
 
 .right-column-wrapper>h3.green-medium {
-  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.14;
+  display: flex;
+  padding: 0 0 1rem 2rem;
 }
 
 .box-right {
+  width: 20rem;
   display: flex;
   background-color: #f6f6f6;
   margin: .5rem;
 }
 
 .box-right>img {
-  width: 153px;
+  width: 7rem;
   object-fit: contain;
   padding: 0 2rem 1rem 1rem;
 }
@@ -870,9 +874,12 @@ Learn Styles
   padding: 2.1rem 1rem 2rem 0;
 }
 
+.box-right-column>a {
+  font-size: .7rem;
+} 
+
 .box-right-column .button-cta>button {
-  height: 40px;
-  font-size: 20px;
+  font-size: .7rem;
 }
 
 /* ==========================================================================
