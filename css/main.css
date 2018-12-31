@@ -854,65 +854,65 @@ FAQ Styles
 Comparison Styles
 ========================================================================== */
 
-@media only screen and (max-width: 414px) {}
-
-.comparison-wrapper {
-  display: flex;
-  padding-bottom: 3rem;
-}
-
-.child-comparison-wrapper {
+div.comparisontable {
   display: flex;
   flex-direction: column;
+  border: #ebebeb .05rem solid;
 }
 
-.vertical-column {
+
+div.comparisontable ul.row {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  border: solid 1px #ebebeb;
+  /* turn children li elements into flex children */
+  flex: 1;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
-.vertical-column>i {
+div.comparisontable ul.row li {
+  flex: 1;
+}
+
+div.comparisontable ul.row li>i {
   display: flex;
-  align-items: stretch;
+  align-items: center !important;
   color: #69bd45;
 }
 
-.vertical-side-column {
-  width: 10rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: solid 1px #ebebeb;
+div.comparisontable ul.row li>img {
+  height: 1.5rem;
 }
 
-.vertical-text-wrapper>h2.blue-light {
-  display: flex;
-  flex-direction: column;
-  justify-content: first baseline;
-  font-size: 1.2rem;
+/* the legend column (first li within each row) */
+div.comparisontable ul.row li.legend {
+  border: none;
+  width: 30rem;
+  text-align: center;
 }
 
-.horizontal-row-wrapper {
-  display: flex;
-  background-color: #ebebeb;
+/* very first row */
+div.comparisontable ul.row:first-of-type li {
+  background: #ebebeb;
+  text-align: center;
 }
 
-.comparison-company {
-  display: flex;
-  flex-direction: column;
+div.comparisontable ul.row:first-of-type li>i {
+  text-align: center;
 }
 
-.comparison-company>.ranking-logo img {
-  justify-content: space-between;
+/* very last row */
+div.comparisontable ul.row:last-of-type li {
+  text-align: center;
+  border-bottom: none;
 }
 
-.comparison-company>a {
-  justify-content: space-between;
-}
 
-.bottom-column-wrapper {
-  display: flex;
+/* first and last cell within legend column */
+div.comparisontable ul.row:first-of-type li.legend.legend,
+div.comparisontable ul.row:last-of-type li.legend {
+  background: transparent;
+  box-shadow: none;
 }
 
 /* ==========================================================================
