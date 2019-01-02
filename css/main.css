@@ -358,6 +358,16 @@ Hero Styles
 Home Page We Recommend Body Styles Styles
 ========================================================================== */
 
+@media only screen and (max-width: 1024px) {
+  .blog-column>.social-icons {
+    color: #00416b;
+    font-size: 1.5rem !important;
+    padding-top: 1.5rem;
+  }
+
+
+}
+
 @media only screen and (max-width: 414px) {
   .ranking-box {
     display: flex;
@@ -918,6 +928,13 @@ div.comparisontable ul.row:last-of-type li.legend {
 /* ==========================================================================
 Learn Styles
 ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .box-left-column>h2.blue-bold-small {
+    font-size: 1rem !important;
+    line-height: 1.3rem !important;
+  }
+}
 
 @media only screen and (max-width: 414px) {
   .box-wrapping-row {
