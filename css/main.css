@@ -34,6 +34,11 @@ Custom Font - Avenir Next
 Base styles: opinionated defaults
 ========================================================================== */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   color: #222;
   font-size: calc(0.5em + 1vw);
@@ -46,7 +51,6 @@ html {
 }
 
 body {
-  margin: 0;
   font-family: "AvenirNext-Regular", Arial, Helvetica, sans-serif;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -271,6 +275,11 @@ Navigation Styles
   padding: 0 10px;
 }
 
+.top-nav ul,
+.top-nav>input {
+  display: none;
+}
+
 .top-nav .logo a>img {
   height: 2rem;
   object-fit: contain;
@@ -318,7 +327,7 @@ Hero Styles
     display: flex;
     width: 100%;
     padding: 0 0.5rem !important;
-    text-align: center;
+    justify-content: center !important;
   }
 }
 
@@ -929,141 +938,144 @@ div.comparisontable ul.row:last-of-type li.legend {
 Learn Styles
 ========================================================================== */
 
-@media only screen and (max-width: 1024px) {
-  .box-left-column>h2.blue-bold-small {
-    font-size: 1rem !important;
-    line-height: 1.3rem !important;
-  }
-}
-
 @media only screen and (max-width: 414px) {
-  .box-wrapping-row {
+  .container {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    align-items: center;
-    padding: 4rem 11%;
     justify-content: center;
   }
 
-  .box-left-column>h2.blue-bold-small {
-    font-size: 1rem !important;
-    line-height: 1.3rem !important;
-  }
-
-  .right-column-wrapper {
+  .left-column {
     display: flex;
     flex-direction: column;
-    padding-top: 2rem !important;
+    align-items: center;
   }
 
-  .right-column-wrapper>h3.green-medium {
-    font-size: 1.3rem;
-    line-height: 1.14;
+  .blog-box {
     display: flex;
+    background-color: #ebebeb;
+    padding: 30px 42px;
+    max-width: 400px;
+    max-height: 300px;
+    margin-bottom: 20px;
+    align-items: center;
   }
 }
 
-.box-wrapping-row {
+.container {
   display: flex;
-  flex: 1;
-  align-items: center;
-  padding: 4rem 11%;
-  justify-content: center;
+  min-width: 1224px;
+  /* This is just to make the width more accurate to the mock up */
 }
 
-.left-column-wrapper {
+.left-column {
+  flex: 2;
+  /*   background-color: blue; */
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  padding-top: 60px;
 }
 
-.box-left {
-  height: 14rem;
+.blog-box {
   display: flex;
   background-color: #ebebeb;
-  margin-bottom: 1rem;
+  padding: 30px 42px;
+  max-width: 700px;
+  max-height: 300px;
+  margin-bottom: 20px;
 }
 
-.box-left-wrapper {
-  display: flex;
-  align-items: center;
-  padding-left: 1rem;
+.blog-box .img>img {
+  height: 216px;
+  object-fit: contain;
 }
 
-.box-left-column>h2.blue-bold-small {
+.title-date>h2 {
   font-size: 28px;
-  line-height: 32px;
+  padding-bottom: 10px;
 }
 
-.box-left-column>p.date {
-  font-size: 0.6rem;
-  font-style: italic;
-  line-height: 1.88;
+.title-date>p {
+  font-size: 16px;
 }
 
-.box-left-column>p.description {
-  font-size: 0.7rem;
-  line-height: 1rem;
+.left-column .img {
+  flex: 1;
 }
 
-.box-left-column>a {
-  font-size: 0.7rem;
-}
-
-.box-left-wrapper>img {
-  height: 11rem;
-}
-
-.box-left-column {
-  width: 14rem;
+.left-column .text {
+  flex: 2;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  justify-content: space-around;
 }
 
-.right-column-wrapper {
+p.excerpt {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.excerpt-link>a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.right-column {
+  flex: 1;
+  /*   background-color: red; */
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
-  padding-top: 6rem;
 }
 
-.right-column-wrapper>h3.green-medium {
-  font-size: 1.3rem;
-  line-height: 1.14;
-  display: flex;
-  justify-content: center;
+.column-title {
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 110px;
 }
 
-.box-right {
-  width: 18rem;
-  display: flex;
+.merchant-box {
   background-color: #f6f6f6;
-  justify-content: center;
-  margin: 0.5rem;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  min-height: 180px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  max-width: 400px;
 }
 
-.box-right>img {
-  height: 1.5rem;
+.merchant-box .img>img {
+  height: 36px;
+  object-fit: contain;
+}
+
+.links>a {
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.2px;
+}
+
+.merchant-box .links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
-.box-right-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0.5rem;
-}
-
-.box-right-column>a {
-  font-size: 0.7rem;
-}
-
-.box-right-column .button-cta>button {
-  font-size: 0.7rem;
+a.button {
+  background-color: #69bd45;
+  text-align: center;
+  padding: 12px 37px;
+  margin-bottom: 18px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: "AvenirNext-Bold";
 }
 
 /* ==========================================================================
