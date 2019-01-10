@@ -213,7 +213,6 @@ Button Styles
 @media only screen and (max-width: 414px) {
   .button-cta>button {
     padding: 1rem 2rem 1rem 2rem;
-    margin-top: 1.5rem;
   }
 
   .quote-button {
@@ -252,15 +251,43 @@ Navigation Styles
 ========================================================================== */
 
 @media only screen and (max-width: 414px) {
-  .top-nav .logo a>img {
-    height: 3rem;
-    object-fit: contain;
-    padding: 10px;
+  .menu-button-container {
+    display: flex;
   }
-
-  .top-nav li>a {
-    font-size: 0.9rem;
-    padding: 0 1.1rem 0 0;
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
   }
 }
 
@@ -306,6 +333,46 @@ Navigation Styles
 
 .top-nav a.active {
   color: #1aa2dd;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
 }
 
 /* ==========================================================================
@@ -410,7 +477,7 @@ Home Page We Recommend Body Styles Styles
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
-    padding-bottom: 36px;
+    margin-top: 1rem;
   }
 
   .rating {
@@ -438,6 +505,7 @@ Home Page We Recommend Body Styles Styles
     align-self: flex-start;
     padding-bottom: 1rem !important;
   }
+
 }
 
 .box-wrapping {
@@ -873,6 +941,17 @@ FAQ Styles
 Comparison Styles
 ========================================================================== */
 
+@media only screen and (max-width: 414px) {
+  div.comparisontable ul.row li>img {
+    height: 1rem !important;
+  }
+
+  div.comparisontable ul.row li {
+    flex: 1;
+    font-size: .5rem !important;
+  }
+}
+
 div.comparisontable {
   display: flex;
   flex-direction: column;
@@ -895,8 +974,10 @@ div.comparisontable ul.row li {
 
 div.comparisontable ul.row li>i {
   display: flex;
-  align-items: center !important;
   color: #69bd45;
+  justify-content: center;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 div.comparisontable ul.row li>img {
