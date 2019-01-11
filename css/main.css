@@ -50,6 +50,12 @@ html {
   overflow-x: hidden;
 }
 
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: calc(0.7em + 1vw);
+  }
+}
+
 body {
   font-family: 'AvenirNext-Regular', Arial, Helvetica, sans-serif;
   overflow-x: hidden;
@@ -154,6 +160,7 @@ h6 {
 
 h2.blue-bold {
   font-size: 2.25rem;
+  padding-bottom: 12px;
 }
 
 h2.blue-bold-small {
@@ -174,9 +181,10 @@ h2.green-bold {
 
 h2.green-medium {
   font-family: 'AvenirNext-Medium';
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #69bd45;
+  padding-bottom: 8px;
 }
 
 h3.green-medium {
@@ -194,10 +202,23 @@ h3.blue-small {
   padding-bottom: 15px;
 }
 
+@media only screen and (max-width: 800px) {
+  h3.blue-small {
+    font-size: 1rem;
+  }
+}
+
 p {
   font-size: 1rem;
   font-family: 'AvenirNext-Regular';
   color: #00416b;
+  padding-bottom: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+  p {
+    font-size: 1.1rem;
+  }
 }
 
 a {
@@ -209,9 +230,20 @@ a.link-bold {
   font-size: 0.775rem;
 }
 
+@media only screen and (max-width: 800px) {
+  a.link-bold {
+    font-size: 1rem;
+  }
+}
+
 ul > li {
   color: #00416b;
   line-height: 2;
+}
+
+ul {
+  padding-left: 20px;
+  padding-bottom: 16px;
 }
 
 /* ==========================================================================
@@ -397,7 +429,7 @@ Hero Styles
 }
 
 .hero-header {
-  padding: 0 11rem;
+  padding: 0 11rem 1rem 11rem;
   flex: 1;
   display: flex;
   align-items: flex-end;
@@ -406,7 +438,7 @@ Hero Styles
 
 @media only screen and (max-width: 1024px) {
   .hero-header {
-    padding: 0 2rem;
+    padding: 0 2rem 1rem 2rem;
   }
 }
 
@@ -430,7 +462,7 @@ Hero Styles
 }
 
 .hero-description > p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   color: #fff;
 }
@@ -438,77 +470,6 @@ Hero Styles
 /* ==========================================================================
 Home Page We Recommend Body Styles Styles
 ========================================================================== */
-
-@media only screen and (max-width: 1024px) {
-  .blog-column > .social-icons {
-    color: #00416b;
-    font-size: 1.5rem !important;
-    padding-top: 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  .ranking-box {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 80rem;
-  }
-
-  .ranking-logo > img {
-    height: 3rem !important;
-  }
-
-  .company-left {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-  }
-
-  .company-right {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between;
-  }
-
-  .box-wrapping-columns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .rating-wrapper {
-    justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-
-  .rating {
-    font-family: 'AvenirNext-Bold' !important;
-    font-size: 1rem !important;
-    color: #00416b;
-  }
-
-  .rating-bar {
-    width: 90%;
-    height: 2%;
-    background-color: #69bd45;
-  }
-
-  .blog-column .blog-snippet > h2 {
-    font-size: 1rem;
-    line-height: 4rem !important;
-    font-family: 'AvenirNext-Medium';
-    font-weight: 400;
-    color: #00416b;
-  }
-
-  .recommend-header {
-    display: flex;
-    align-self: flex-start;
-    padding-bottom: 1rem !important;
-  }
-}
 
 .box-wrapping {
   display: flex;
@@ -520,7 +481,7 @@ Home Page We Recommend Body Styles Styles
 
 @media only screen and (max-width: 1300px) {
   .box-wrapping {
-    padding: 60px 1%;
+    padding: 30px 1%;
   }
 }
 
@@ -528,6 +489,12 @@ Home Page We Recommend Body Styles Styles
   display: flex;
   align-self: flex-start;
   padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 800px) {
+  .recommend-header {
+    padding-bottom: 30px;
+  }
 }
 
 .box-wrapping-columns {
@@ -579,6 +546,12 @@ Home Page We Recommend Body Styles Styles
   padding-bottom: 36px;
 }
 
+@media only screen and (max-width: 800px) {
+  .ranking-logo > img {
+    padding-bottom: 20px;
+  }
+}
+
 .company-slogan {
   padding-bottom: 21px;
 }
@@ -589,6 +562,12 @@ Home Page We Recommend Body Styles Styles
   font-weight: 500;
   letter-spacing: 0.2px;
   color: #00416b;
+}
+
+@media only screen and (max-width: 800px) {
+  .company-slogan > h4 {
+    font-size: 1.5rem;
+  }
 }
 
 .ranking-stars {
@@ -626,10 +605,16 @@ Home Page We Recommend Body Styles Styles
 
 .company-telephone > h3 {
   font-family: 'AvenirNext-Regular';
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: normal;
   letter-spacing: 0.2px;
   color: #00416b;
+}
+
+@media only screen and (max-width: 800px) {
+  .company-telephone > h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .ranking-box {
@@ -648,12 +633,24 @@ Home Page We Recommend Body Styles Styles
   padding-bottom: 36px;
 }
 
+@media only screen and (max-width: 800px) {
+  .company-name {
+    padding-bottom: 20px;
+  }
+}
+
 .company-name > h3 {
   font-family: 'AvenirNext-Medium';
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.2px;
   color: #00416b;
+}
+
+@media only screen and (max-width: 800px) {
+  .company-name > h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .rating {
@@ -667,10 +664,23 @@ Home Page We Recommend Body Styles Styles
   color: #00416b;
 }
 
+@media only screen and (max-width: 800px) {
+  .rating > p {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+
 .rating-bar {
   width: 360px;
   height: 10px;
   background-color: #69bd45;
+}
+
+@media only screen and (max-width: 800px) {
+  .rating-bar {
+    width: 100%;
+  }
 }
 
 .company-description {
@@ -684,6 +694,12 @@ Home Page We Recommend Body Styles Styles
   color: #00416b;
 }
 
+@media only screen and (max-width: 800px) {
+  .company-description > p {
+    font-size: 0.875rem;
+  }
+}
+
 ul.fa-ul {
   margin: 0;
 }
@@ -694,6 +710,12 @@ ul.fa-ul {
   line-height: 35px;
   letter-spacing: 0.2px;
   color: #00416b;
+}
+
+@media only screen and (max-width: 800px) {
+  .company-pros-list ul > li {
+    font-size: 0.9rem;
+  }
 }
 
 .company-pros-list ul li > i {
@@ -721,6 +743,12 @@ ul.fa-ul {
   padding-top: 28px;
 }
 
+@media only screen and (max-width: 800px) {
+  .blog-column > .social-icons {
+    font-size: 2.8rem;
+  }
+}
+
 .blog-column-title > h2 {
   font-size: 1.3rem;
   line-height: 100px;
@@ -729,34 +757,27 @@ ul.fa-ul {
   color: #00416b;
 }
 
+@media only screen and (max-width: 800px) {
+  .blog-column-title > h2 {
+    font-size: 1.6rem;
+  }
+}
+
 .blog-details > p {
   font-family: 'AvenirNext-regular';
   font-size: 0.775rem;
   color: #00416b;
 }
 
+@media only screen and (max-width: 800px) {
+  .blog-details > p {
+    font-size: 1rem;
+  }
+}
+
 /* ==========================================================================
 Home Page Service Info Styles Styles
 ========================================================================== */
-
-@media only screen and (max-width: 414px) {
-  .basic-info-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding: 32px 0;
-  }
-
-  .basic-info-column-right {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .basic-info-img > img {
-    height: 10rem !important;
-    display: flex;
-  }
-}
 
 .service-info-wrapper {
   display: flex;
@@ -780,9 +801,22 @@ Home Page Service Info Styles Styles
   padding: 32px 11%;
 }
 
+@media only screen and (max-width: 800px) {
+  .service-info-block-grey,
+  .service-info-block-white {
+    padding: 28px 3%;
+  }
+}
+
 .basic-info-column-left {
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+  .basic-info-column-left {
+    padding-bottom: 15px;
+  }
 }
 
 .basic-info-column-right {
@@ -791,14 +825,33 @@ Home Page Service Info Styles Styles
   padding-left: 30px;
 }
 
+@media only screen and (max-width: 800px) {
+  .basic-info-column-right {
+    padding-left: 0;
+    justify-content: center;
+  }
+}
+
 .basic-info-wrapper {
   display: flex;
   align-content: center;
   padding: 32px 0;
 }
 
+@media only screen and (max-width: 800px) {
+  .basic-info-wrapper {
+    flex-direction: column;
+  }
+}
+
 .basic-info-column-right .basic-info-img > img {
   height: 7rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .basic-info-column-right .basic-info-img > img {
+    height: 12rem;
+  }
 }
 
 .basic-list-wrapper {
@@ -852,36 +905,16 @@ Home Page Service Info Styles Styles
 Top 3 Styles
 ========================================================================== */
 
-@media only screen and (max-width: 414px) {
-  .provider-info-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-
-  .provider-wrapper .button-cta > button {
-    margin-bottom: 1.5rem !important;
-  }
-
-  .provider-pros-cons-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin-top: 2rem;
-  }
-
-  .provider-name > h3 {
-    font-family: 'AvenirNext-Regular';
-    font-size: 1rem;
-    font-weight: 300;
-    color: #00416b;
-  }
-}
-
 .top-three-providers {
   display: flex;
   flex-direction: column;
   padding: 0 11%;
+}
+
+@media only screen and (max-width: 800px) {
+  .top-three-providers {
+    padding: 0 3%;
+  }
 }
 
 .provider-logo > img {
@@ -892,7 +925,7 @@ Top 3 Styles
 .provider-name > h3 {
   padding-bottom: 30px;
   font-family: 'AvenirNext-Regular';
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 300;
   color: #00416b;
 }
@@ -909,14 +942,24 @@ Top 3 Styles
   flex: 1;
 }
 
+@media only screen and (max-width: 800px) {
+  .provider-info-wrapper {
+    flex-direction: column;
+  }
+}
+
 .provider-best-for {
   flex: 1;
 }
 
-.provider-best-for > h4 {
-  font-family: 'AvenirNext-Regular';
-  font-size: 1rem;
-  color: #00416b;
+@media only screen and (max-width: 800px) {
+  .provider-best-for {
+    padding-bottom: 12px;
+  }
+}
+
+.provider-best-for > p {
+  font-size: 0.775rem;
 }
 
 .provider-pros-cons-wrapper {
@@ -925,14 +968,10 @@ Top 3 Styles
   flex: 1;
 }
 
-.provider-pros ul > li {
-  font-family: 'AvenirNext-Regular';
-  color: #00416b;
-}
-
+.provider-pros ul > li,
 .provider-cons ul > li {
-  font-family: 'AvenirNext-Regular';
-  color: #00416b;
+  list-style-type: none;
+  font-size: 0.775rem;
 }
 
 /* ==========================================================================
@@ -1179,19 +1218,6 @@ a.button {
 Footer Styles Styles
 ========================================================================== */
 
-@media only screen and (max-width: 414px) {
-  .footer .logo > img {
-    width: 10rem !important;
-  }
-
-  footer .links > ul {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
 .footer {
   display: flex;
   flex: 1;
@@ -1202,18 +1228,35 @@ Footer Styles Styles
   padding: 40px 0;
 }
 
+.footer .logo {
+  padding-bottom: 30px;
+}
+
 .footer .logo > img {
   width: 203px;
 }
 
+.copyright-text {
+  padding-bottom: 30px;
+}
+
 .copyright-text > p {
   text-align: center;
-  color: #fff;
+  font-size: 0.875rem;
+  color: #ccc;
+  padding-bottom: 5px;
 }
 
 footer .links > ul {
   display: flex;
   list-style: none;
+}
+
+@media only screen and (max-width: 800px) {
+  footer .links > ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 footer li {
@@ -1224,6 +1267,7 @@ footer li {
 footer li > a {
   text-decoration: none;
   color: #ebebeb;
+  font-size: 0.875rem;
 }
 
 /* ==========================================================================
