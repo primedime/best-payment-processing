@@ -52,7 +52,6 @@ html {
 
 body {
   font-family: 'AvenirNext-Regular', Arial, Helvetica, sans-serif;
-  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -175,7 +174,7 @@ h2.green-bold {
 
 h2.green-medium {
   font-family: 'AvenirNext-Medium';
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: #69bd45;
 }
@@ -185,6 +184,14 @@ h3.green-medium {
   font-size: 1.5rem;
   font-weight: 500;
   color: #69bd45;
+}
+
+h3.blue-small {
+  font-size: 0.875rem;
+  font-family: 'AvenirNext-Medium';
+  font-weight: 500;
+  color: #00416b;
+  padding-bottom: 10px;
 }
 
 p {
@@ -199,6 +206,7 @@ a {
 
 a.link-bold {
   font-weight: 700;
+  font-size: 0.875rem;
 }
 
 ul > li {
@@ -235,7 +243,8 @@ Button Styles
 
 .quote-button {
   background-color: #45b5d0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  min-width: 100%;
   font-weight: bold;
   letter-spacing: 0.2px;
   color: #ffffff;
@@ -249,45 +258,18 @@ Button Styles
 /* ==========================================================================
 Navigation Styles
 ========================================================================== */
+#menu-toggle {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
 
-@media only screen and (max-width: 414px) {
-  .menu-button-container {
-    display: flex;
-  }
-  .menu {
-    position: absolute;
-    top: 0;
-    margin-top: 50px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-    border: 1px solid #333;
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: white;
-    background-color: #222;
-  }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
+@media only screen and (max-width: 920px) {
+  #menu-toggle {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    padding-right: 10px;
   }
 }
 
@@ -296,15 +278,42 @@ Navigation Styles
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  width: 100%;
-  max-height: 100px;
+  min-height: 100px;
   background: #fff;
   padding: 0 10px;
+}
+
+@media only screen and (max-width: 920px) {
+  .top-nav {
+    overflow: visible;
+    flex-direction: column;
+    align-items: unset;
+    max-height: 100%;
+    min-height: unset;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    z-index: 5555;
+  }
+}
+
+.logo-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+i.fa-bars {
+  font-size: 2rem;
 }
 
 .top-nav ul,
 .top-nav > input {
   display: none;
+}
+
+.logo a {
+  display: block;
 }
 
 .top-nav .logo a > img {
@@ -313,9 +322,32 @@ Navigation Styles
   padding: 10px;
 }
 
+@media only screen and (max-width: 920px) {
+  .top-nav .logo a > img {
+    height: 5rem;
+  }
+}
+
 .top-nav > ul {
   display: flex;
   list-style: none;
+}
+
+@media only screen and (max-width: 920px) {
+  .menu-visible {
+    display: flex !important;
+    margin-left: 10px;
+  }
+  .top-nav > ul {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .top-nav ul > li {
+    line-height: 2.1;
+  }
 }
 
 .top-nav li > a {
@@ -327,52 +359,20 @@ Navigation Styles
   display: inline-block;
 }
 
+@media only screen and (max-width: 920px) {
+  .top-nav li > a {
+    font-size: 1.5rem;
+    display: block;
+    padding: 0;
+  }
+}
+
 .top-nav a:hover {
   color: #1aa2dd;
 }
 
 .top-nav a.active {
   color: #1aa2dd;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-  display: block;
-  background-color: #fff;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-}
-
-.menu-button::before {
-  content: '';
-  margin-top: -8px;
-}
-
-.menu-button::after {
-  content: '';
-  margin-top: 8px;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
 }
 
 /* ==========================================================================
@@ -388,6 +388,12 @@ Hero Styles
   background-color: #00416b;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 920px) {
+  .hero {
+    padding-top: 100px;
+  }
 }
 
 .hero-header {
@@ -509,7 +515,13 @@ Home Page We Recommend Body Styles Styles
   flex: 1;
   flex-direction: column;
   align-items: center;
-  padding: 60px 11%;
+  padding: 60px 8%;
+}
+
+@media only screen and (max-width: 1300px) {
+  .box-wrapping {
+    padding: 60px 1%;
+  }
 }
 
 .recommend-header {
@@ -518,30 +530,34 @@ Home Page We Recommend Body Styles Styles
   padding-bottom: 60px;
 }
 
-.box-wrapping .recommend-header > h2 {
-  font-family: 'AvenirNext-Medium';
-  font-size: 2rem;
-  font-weight: 500;
-  letter-spacing: 0.32px;
-  color: #69bd45;
-}
-
 .box-wrapping-columns {
   display: flex;
   justify-content: center;
 }
 
+@media only screen and (max-width: 1090px) {
+  .box-wrapping-columns {
+    flex-direction: column;
+  }
+}
+
 .ranking-column {
   display: flex;
   flex-direction: column;
-  flex-basis: 800px;
+  flex: 3;
 }
 
 .company-left {
   display: flex;
   flex-direction: column;
-  flex-basis: 252px;
-  padding-right: 78px;
+  flex: 1;
+  padding-right: 60px;
+}
+
+@media only screen and (max-width: 760px) {
+  .company-left {
+    padding-right: 0;
+  }
 }
 
 .company-right {
@@ -569,7 +585,7 @@ Home Page We Recommend Body Styles Styles
 
 .company-slogan > h4 {
   font-family: 'AvenirNext-Medium';
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.2px;
   color: #00416b;
@@ -610,7 +626,7 @@ Home Page We Recommend Body Styles Styles
 
 .company-telephone > h3 {
   font-family: 'AvenirNext-Regular';
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: normal;
   letter-spacing: 0.2px;
   color: #00416b;
@@ -622,23 +638,31 @@ Home Page We Recommend Body Styles Styles
   padding: 24px 20px;
 }
 
+@media only screen and (max-width: 760px) {
+  .ranking-box {
+    flex-direction: column;
+  }
+}
+
 .company-name {
   padding-bottom: 36px;
 }
 
 .company-name > h3 {
   font-family: 'AvenirNext-Medium';
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.2px;
   color: #00416b;
 }
 
 .rating {
-  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.rating > p {
   font-family: 'AvenirNext-Bold';
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 0.875rem;
   letter-spacing: 0.2px;
   color: #00416b;
 }
@@ -649,9 +673,13 @@ Home Page We Recommend Body Styles Styles
   background-color: #69bd45;
 }
 
+.company-description {
+  padding-bottom: 16px;
+}
+
 .company-description > p {
   font-family: 'AvenirNext-Medium';
-  font-size: 0.875rem;
+  font-size: 0.775rem;
   letter-spacing: 0.1px;
   color: #00416b;
 }
@@ -662,6 +690,7 @@ ul.fa-ul {
 
 .company-pros-list ul > li {
   font-family: 'AvenirNext-Medium';
+  font-size: 0.875rem;
   line-height: 35px;
   letter-spacing: 0.2px;
   color: #00416b;
@@ -669,47 +698,40 @@ ul.fa-ul {
 
 .company-pros-list ul li > i {
   color: #45b5d0;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .blog-column {
   background: rgb(234, 245, 250);
   display: flex;
   flex-direction: column;
-  flex-basis: 300px;
-}
-
-.blog-item {
-  margin: 0 20px;
+  flex: 1;
+  padding: 0 20px;
 }
 
 .blog-item > hr {
   background-color: #00416b;
 }
 
-.blog-column {
-  display: flex;
-  flex-direction: column;
-}
-
 .blog-column > .social-icons {
   color: #00416b;
   text-align: center;
-  font-size: 2.813rem;
+  font-size: 2rem;
   letter-spacing: 10px;
   padding-top: 28px;
 }
 
-.blog-column .blog-snippet > h2 {
-  font-size: 1.875rem;
+.blog-column-title > h2 {
+  font-size: 1.3rem;
   line-height: 100px;
   font-family: 'AvenirNext-Medium';
   font-weight: 400;
   color: #00416b;
 }
 
-.blog-column .blog-snippet > p {
-  font-family: AvenirNext-Medium;
+.blog-details > p {
+  font-family: 'AvenirNext-regular';
+  font-size: 0.875rem;
   color: #00416b;
 }
 
