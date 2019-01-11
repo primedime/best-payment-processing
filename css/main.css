@@ -442,10 +442,22 @@ Hero Styles
   }
 }
 
+@media only screen and (max-width: 414px) {
+  .hero-header {
+    padding: 0 0.875rem 1rem 0.875rem;
+  }
+}
+
 .hero-header > h1 {
   font-size: 2.5rem;
   text-align: center;
   color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+  .hero-header > h1 {
+    font-size: 2rem;
+  }
 }
 
 .hero-description {
@@ -455,9 +467,9 @@ Hero Styles
   justify-content: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 800px) {
   .hero-description {
-    padding: 0 2rem;
+    padding: 0 1.1rem;
   }
 }
 
@@ -465,6 +477,12 @@ Hero Styles
   font-size: 1.5rem;
   text-align: center;
   color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-description > p {
+    font-size: 1.2rem;
+  }
 }
 
 /* ==========================================================================
