@@ -187,11 +187,11 @@ h3.green-medium {
 }
 
 h3.blue-small {
-  font-size: 0.875rem;
+  font-size: 0.775rem;
   font-family: 'AvenirNext-Medium';
   font-weight: 500;
   color: #00416b;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 p {
@@ -206,7 +206,7 @@ a {
 
 a.link-bold {
   font-weight: 700;
-  font-size: 0.875rem;
+  font-size: 0.775rem;
 }
 
 ul > li {
@@ -731,7 +731,7 @@ ul.fa-ul {
 
 .blog-details > p {
   font-family: 'AvenirNext-regular';
-  font-size: 0.875rem;
+  font-size: 0.775rem;
   color: #00416b;
 }
 
