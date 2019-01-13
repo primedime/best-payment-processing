@@ -215,6 +215,12 @@ p {
   padding-bottom: 16px;
 }
 
+p.blue-small {
+  font-family: AvenirNext-Regular;
+  line-height: 1.25;
+  color: #00416b;
+}
+
 @media only screen and (max-width: 800px) {
   p {
     font-size: 1.1rem;
@@ -236,7 +242,7 @@ a.link-bold {
   }
 }
 
-ul > li {
+ul>li {
   color: #00416b;
   line-height: 2;
 }
@@ -251,7 +257,7 @@ Button Styles
 ========================================================================== */
 
 @media only screen and (max-width: 414px) {
-  .button-cta > button {
+  .button-cta>button {
     padding: 1rem 2rem 1rem 2rem;
   }
 
@@ -268,7 +274,7 @@ Button Styles
   }
 }
 
-.button-cta > button {
+.button-cta>button {
   border: none;
   margin-bottom: 1rem;
 }
@@ -340,7 +346,7 @@ i.fa-bars {
 }
 
 .top-nav ul,
-.top-nav > input {
+.top-nav>input {
   display: none;
 }
 
@@ -348,19 +354,19 @@ i.fa-bars {
   display: block;
 }
 
-.top-nav .logo a > img {
+.top-nav .logo a>img {
   height: 2.8rem;
   object-fit: contain;
   padding: 10px;
 }
 
 @media only screen and (max-width: 920px) {
-  .top-nav .logo a > img {
+  .top-nav .logo a>img {
     height: 5rem;
   }
 }
 
-.top-nav > ul {
+.top-nav>ul {
   display: flex;
   list-style: none;
 }
@@ -370,19 +376,20 @@ i.fa-bars {
     display: flex !important;
     margin-left: 10px;
   }
-  .top-nav > ul {
+
+  .top-nav>ul {
     display: none;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
   }
 
-  .top-nav ul > li {
+  .top-nav ul>li {
     line-height: 2.1;
   }
 }
 
-.top-nav li > a {
+.top-nav li>a {
   color: #707070;
   font-size: 1rem;
   font-weight: bold;
@@ -392,7 +399,7 @@ i.fa-bars {
 }
 
 @media only screen and (max-width: 920px) {
-  .top-nav li > a {
+  .top-nav li>a {
     font-size: 1.5rem;
     display: block;
     padding: 0;
@@ -448,14 +455,14 @@ Hero Styles
   }
 }
 
-.hero-header > h1 {
+.hero-header>h1 {
   font-size: 2.5rem;
   text-align: center;
   color: #fff;
 }
 
 @media only screen and (max-width: 800px) {
-  .hero-header > h1 {
+  .hero-header>h1 {
     font-size: 2rem;
   }
 }
@@ -473,14 +480,14 @@ Hero Styles
   }
 }
 
-.hero-description > p {
+.hero-description>p {
   font-size: 1.5rem;
   text-align: center;
   color: #fff;
 }
 
 @media only screen and (max-width: 1024px) {
-  .hero-description > p {
+  .hero-description>p {
     font-size: 1.2rem;
   }
 }
@@ -559,13 +566,13 @@ Home Page We Recommend Body Styles Styles
   padding-bottom: 36px;
 }
 
-.ranking-logo > img {
+.ranking-logo>img {
   height: 57px;
   padding-bottom: 36px;
 }
 
 @media only screen and (max-width: 800px) {
-  .ranking-logo > img {
+  .ranking-logo>img {
     padding-bottom: 20px;
   }
 }
@@ -574,7 +581,7 @@ Home Page We Recommend Body Styles Styles
   padding-bottom: 21px;
 }
 
-.company-slogan > h4 {
+.company-slogan>h4 {
   font-family: 'AvenirNext-Medium';
   font-size: 1.2rem;
   font-weight: 500;
@@ -583,7 +590,7 @@ Home Page We Recommend Body Styles Styles
 }
 
 @media only screen and (max-width: 800px) {
-  .company-slogan > h4 {
+  .company-slogan>h4 {
     font-size: 1.5rem;
   }
 }
@@ -600,11 +607,11 @@ Home Page We Recommend Body Styles Styles
   padding: 0;
 }
 
-.ranking-stars ul > li {
+.ranking-stars ul>li {
   padding: 5px;
 }
 
-.ranking-stars ul li > img {
+.ranking-stars ul li>img {
   display: flex;
   height: 17px;
   color: #dabf27;
@@ -615,13 +622,13 @@ Home Page We Recommend Body Styles Styles
   padding-bottom: 23px;
 }
 
-.company-telephone > i {
+.company-telephone>i {
   padding: 5px;
   font-size: 1.625rem;
   color: #00416b;
 }
 
-.company-telephone > h3 {
+.company-telephone>h3 {
   font-family: 'AvenirNext-Regular';
   font-size: 1.2rem;
   font-weight: normal;
@@ -630,7 +637,7 @@ Home Page We Recommend Body Styles Styles
 }
 
 @media only screen and (max-width: 800px) {
-  .company-telephone > h3 {
+  .company-telephone>h3 {
     font-size: 1.5rem;
   }
 }
@@ -657,7 +664,7 @@ Home Page We Recommend Body Styles Styles
   }
 }
 
-.company-name > h3 {
+.company-name>h3 {
   font-family: 'AvenirNext-Medium';
   font-size: 1.2rem;
   font-weight: 500;
@@ -666,7 +673,7 @@ Home Page We Recommend Body Styles Styles
 }
 
 @media only screen and (max-width: 800px) {
-  .company-name > h3 {
+  .company-name>h3 {
     font-size: 1.5rem;
   }
 }
@@ -675,7 +682,7 @@ Home Page We Recommend Body Styles Styles
   padding-bottom: 10px;
 }
 
-.rating > p {
+.rating>p {
   font-family: 'AvenirNext-Bold';
   font-size: 0.875rem;
   letter-spacing: 0.2px;
@@ -683,7 +690,7 @@ Home Page We Recommend Body Styles Styles
 }
 
 @media only screen and (max-width: 800px) {
-  .rating > p {
+  .rating>p {
     font-size: 1rem;
     padding: 0;
   }
@@ -705,7 +712,7 @@ Home Page We Recommend Body Styles Styles
   padding-bottom: 16px;
 }
 
-.company-description > p {
+.company-description>p {
   font-family: 'AvenirNext-Medium';
   font-size: 0.775rem;
   letter-spacing: 0.1px;
@@ -713,7 +720,7 @@ Home Page We Recommend Body Styles Styles
 }
 
 @media only screen and (max-width: 800px) {
-  .company-description > p {
+  .company-description>p {
     font-size: 0.875rem;
   }
 }
@@ -722,7 +729,7 @@ ul.fa-ul {
   margin: 0;
 }
 
-.company-pros-list ul > li {
+.company-pros-list ul>li {
   font-family: 'AvenirNext-Medium';
   font-size: 0.875rem;
   line-height: 35px;
@@ -731,12 +738,12 @@ ul.fa-ul {
 }
 
 @media only screen and (max-width: 800px) {
-  .company-pros-list ul > li {
+  .company-pros-list ul>li {
     font-size: 0.9rem;
   }
 }
 
-.company-pros-list ul li > i {
+.company-pros-list ul li>i {
   color: #45b5d0;
   font-size: 1rem;
 }
@@ -749,11 +756,11 @@ ul.fa-ul {
   padding: 0 20px;
 }
 
-.blog-item > hr {
+.blog-item>hr {
   background-color: #00416b;
 }
 
-.blog-column > .social-icons {
+.blog-column>.social-icons {
   color: #00416b;
   text-align: center;
   font-size: 2rem;
@@ -762,12 +769,12 @@ ul.fa-ul {
 }
 
 @media only screen and (max-width: 800px) {
-  .blog-column > .social-icons {
+  .blog-column>.social-icons {
     font-size: 2.8rem;
   }
 }
 
-.blog-column-title > h2 {
+.blog-column-title>h2 {
   font-size: 1.3rem;
   line-height: 100px;
   font-family: 'AvenirNext-Medium';
@@ -776,19 +783,19 @@ ul.fa-ul {
 }
 
 @media only screen and (max-width: 800px) {
-  .blog-column-title > h2 {
+  .blog-column-title>h2 {
     font-size: 1.6rem;
   }
 }
 
-.blog-details > p {
+.blog-details>p {
   font-family: 'AvenirNext-regular';
   font-size: 0.775rem;
   color: #00416b;
 }
 
 @media only screen and (max-width: 800px) {
-  .blog-details > p {
+  .blog-details>p {
     font-size: 1rem;
   }
 }
@@ -820,6 +827,7 @@ Home Page Service Info Styles Styles
 }
 
 @media only screen and (max-width: 800px) {
+
   .service-info-block-grey,
   .service-info-block-white {
     padding: 28px 3%;
@@ -862,12 +870,12 @@ Home Page Service Info Styles Styles
   }
 }
 
-.basic-info-column-right .basic-info-img > img {
+.basic-info-column-right .basic-info-img>img {
   height: 7rem;
 }
 
 @media only screen and (max-width: 800px) {
-  .basic-info-column-right .basic-info-img > img {
+  .basic-info-column-right .basic-info-img>img {
     height: 12rem;
   }
 }
@@ -935,12 +943,12 @@ Top 3 Styles
   }
 }
 
-.provider-logo > img {
+.provider-logo>img {
   height: 44px;
   padding-bottom: 24px;
 }
 
-.provider-name > h3 {
+.provider-name>h3 {
   padding-bottom: 30px;
   font-family: 'AvenirNext-Regular';
   font-size: 1.3rem;
@@ -976,7 +984,7 @@ Top 3 Styles
   }
 }
 
-.provider-best-for > p {
+.provider-best-for>p {
   font-size: 0.775rem;
 }
 
@@ -986,8 +994,8 @@ Top 3 Styles
   flex: 1;
 }
 
-.provider-pros ul > li,
-.provider-cons ul > li {
+.provider-pros ul>li,
+.provider-cons ul>li {
   list-style-type: none;
   font-size: 0.775rem;
 }
@@ -1017,7 +1025,7 @@ Comparison Styles
 ========================================================================== */
 
 @media only screen and (max-width: 414px) {
-  div.comparisontable ul.row li > img {
+  div.comparisontable ul.row li>img {
     height: 1rem !important;
   }
 
@@ -1046,7 +1054,7 @@ div.comparisontable ul.row li {
   flex: 1;
 }
 
-div.comparisontable ul.row li > i {
+div.comparisontable ul.row li>i {
   display: flex;
   color: #69bd45;
   justify-content: center;
@@ -1054,7 +1062,7 @@ div.comparisontable ul.row li > i {
   margin-bottom: 0.5rem;
 }
 
-div.comparisontable ul.row li > img {
+div.comparisontable ul.row li>img {
   height: 1.5rem;
 }
 
@@ -1071,7 +1079,7 @@ div.comparisontable ul.row:first-of-type li {
   text-align: center;
 }
 
-div.comparisontable ul.row:first-of-type li > i {
+div.comparisontable ul.row:first-of-type li>i {
   text-align: center;
 }
 
@@ -1087,6 +1095,71 @@ div.comparisontable ul.row:last-of-type li.legend {
   background: transparent;
   box-shadow: none;
 }
+
+/* ==========================================================================
+Reviews Styles
+========================================================================== */
+
+.review-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+}
+
+.review-wrapper>h2 {
+  margin-bottom: 55px;
+}
+
+.service-info-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-info-block-white>h2 {
+  text-align: left;
+}
+
+.service-info-block-white .service-info-row-top .info>h2 {
+  text-align: left;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+.service-info-block-white>.service-info-row-top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-info-block-white>.service-info-row-top .info {
+  width: 600px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-block>h3 {
+  margin-bottom: 35px;
+}
+
+.info-block>.img {
+  display: flex;
+  justify-content: center;
+}
+
+.info>h3 {
+  text-align: center;
+  margin-top: 74px;
+  margin-bottom: 20px;
+}
+
 
 /* ==========================================================================
 Learn Styles
@@ -1142,17 +1215,17 @@ Learn Styles
   margin-bottom: 20px;
 }
 
-.blog-box .img > img {
+.blog-box .img>img {
   height: 216px;
   object-fit: contain;
 }
 
-.title-date > h2 {
+.title-date>h2 {
   font-size: 28px;
   padding-bottom: 10px;
 }
 
-.title-date > p {
+.title-date>p {
   font-size: 16px;
 }
 
@@ -1173,7 +1246,7 @@ p.excerpt {
   padding-bottom: 10px;
 }
 
-.excerpt-link > a {
+.excerpt-link>a {
   font-size: 16px;
   font-weight: bold;
 }
@@ -1204,12 +1277,12 @@ p.excerpt {
   max-width: 400px;
 }
 
-.merchant-box .img > img {
+.merchant-box .img>img {
   height: 36px;
   object-fit: contain;
 }
 
-.links > a {
+.links>a {
   font-size: 16px;
   line-height: 1.75;
   letter-spacing: 0.2px;
@@ -1250,7 +1323,7 @@ Footer Styles Styles
   padding-bottom: 30px;
 }
 
-.footer .logo > img {
+.footer .logo>img {
   width: 203px;
 }
 
@@ -1258,20 +1331,20 @@ Footer Styles Styles
   padding-bottom: 30px;
 }
 
-.copyright-text > p {
+.copyright-text>p {
   text-align: center;
   font-size: 0.875rem;
   color: #ccc;
   padding-bottom: 5px;
 }
 
-footer .links > ul {
+footer .links>ul {
   display: flex;
   list-style: none;
 }
 
 @media only screen and (max-width: 800px) {
-  footer .links > ul {
+  footer .links>ul {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -1282,7 +1355,7 @@ footer li {
   margin-right: 10px;
 }
 
-footer li > a {
+footer li>a {
   text-decoration: none;
   color: #ebebeb;
   font-size: 0.875rem;
@@ -1380,7 +1453,10 @@ Modify as content requires.
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -1391,6 +1467,7 @@ Modify as content requires.
    ========================================================================== */
 
 @media print {
+
   *,
   *:before,
   *:after {
@@ -1408,11 +1485,11 @@ Modify as content requires.
   }
 
   a[href]:after {
-    content: ' (' attr(href) ')';
+    content: ' ('attr(href) ')';
   }
 
   abbr[title]:after {
-    content: ' (' attr(title) ')';
+    content: ' ('attr(title) ')';
   }
 
   /*
