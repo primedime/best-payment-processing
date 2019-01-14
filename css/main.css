@@ -1014,9 +1014,14 @@ FAQ Styles
   padding: 20px 0 12px 58px;
 }
 
+@media only screen and (max-width: 800px) {
+  .faq-question {
+    padding: 20px 0 12px;
+  }
+}
+
 .faq-question:hover {
   background-color: #ebebeb;
-  color: red;
 }
 
 /* ==========================================================================
