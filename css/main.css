@@ -142,6 +142,10 @@ Browser Upgrade Prompt
 Author's custom styles
 ========================================================================== */
 
+img {
+  max-width: 100%;
+}
+
 /* ==========================================================================
 Typography Styles
 ========================================================================== */
@@ -176,6 +180,11 @@ h2.blue-light {
 
 h2.green-bold {
   font-size: 2rem;
+  color: #69bd45;
+}
+
+h2.green-bold-small {
+  font-size: 1.4rem;
   color: #69bd45;
 }
 
@@ -1168,7 +1177,7 @@ Reviews Styles
 Learn Styles
 ========================================================================== */
 
-@media only screen and (max-width: 414px) {
+/* @media only screen and (max-width: 414px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -1190,87 +1199,134 @@ Learn Styles
     margin-bottom: 20px;
     align-items: center;
   }
-}
+} */
 
 .container {
   display: flex;
-  min-width: 1224px;
+  padding: 3rem 1rem;
   /* This is just to make the width more accurate to the mock up */
 }
 
+.learn-column-wrapper {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+@media only screen and (max-width: 1090px) {
+  .learn-column-wrapper {
+    flex-direction: column;
+  }
+}
+
 .left-column {
-  flex: 2;
-  /*   background-color: blue; */
+  flex: 3;
+  /* background-color: blue; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
   padding-right: 10px;
-  padding-top: 60px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .left-column {
+    align-items: center;
+    justify-content: unset;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .left-column {
+    flex: unset;
+  }
 }
 
 .blog-box {
   display: flex;
-  background-color: #ebebeb;
-  padding: 30px 42px;
+  flex: 1;
   max-width: 700px;
   max-height: 300px;
+  background-color: #ebebeb;
+  padding: 30px 42px;
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 760px) {
+  .blog-box {
+    padding: 0;
+    display: block;
+    max-height: unset;
+  }
+}
+
 .blog-box .img > img {
-  height: 216px;
-  object-fit: contain;
+  min-height: 100%;
+}
+
+@media only screen and (max-width: 760px) {
+  .blog-box .img > img {
+    width: 100%;
+    height: 15rem;
+  }
 }
 
 .title-date > h2 {
-  font-size: 28px;
+  font-size: 1.4rem;
   padding-bottom: 10px;
 }
 
 .title-date > p {
-  font-size: 16px;
+  font-size: 0.775rem;
+  font-style: italic;
 }
 
 .left-column .img {
   flex: 1;
+  /* max-height: 226px; */
 }
 
 .left-column .text {
-  flex: 2;
+  flex: 1.5;
+  max-width: 16rem;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 p.excerpt {
-  font-size: 16px;
+  font-size: 0.875rem;
   padding-bottom: 10px;
 }
 
 .excerpt-link > a {
-  font-size: 16px;
+  font-size: 0.875rem;
   font-weight: bold;
 }
 
 .right-column {
-  flex: 1;
-  /*   background-color: red; */
-  padding-top: 60px;
+  flex: 2;
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 1090px) {
+  .right-column {
+    align-items: center;
+    padding-left: 0;
+  }
 }
 
 .column-title {
-  text-align: center;
   padding-top: 20px;
-  padding-right: 110px;
 }
 
 .merchant-box {
   background-color: #f6f6f6;
-  margin-left: 10px;
   margin-bottom: 20px;
   padding: 0 20px;
   min-height: 180px;
@@ -1278,6 +1334,10 @@ p.excerpt {
   justify-content: space-between;
   align-items: center;
   max-width: 400px;
+}
+
+.merchant-box .img {
+  flex: 1;
 }
 
 .merchant-box .img > img {
@@ -1295,16 +1355,17 @@ p.excerpt {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
 }
 
 a.button {
   background-color: #69bd45;
   text-align: center;
-  padding: 12px 37px;
+  padding: 12px 1.5rem;
   margin-bottom: 18px;
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 0.875rem;
   font-family: 'AvenirNext-Bold';
 }
 
