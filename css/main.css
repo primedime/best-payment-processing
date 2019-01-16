@@ -1037,76 +1037,93 @@ FAQ Styles
 Comparison Styles
 ========================================================================== */
 
-@media only screen and (max-width: 414px) {
-  div.comparisontable ul.row li > img {
-    height: 1rem !important;
-  }
+.comparison-box-wrapping {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 3rem 2rem;
+}
 
-  div.comparisontable ul.row li {
-    flex: 1;
-    font-size: 0.5rem !important;
+table {
+  flex: 1;
+  border: 1px solid #ebebeb;
+  border-collapse: collapse;
+}
+
+@media only screen and (max-width: 1000px) {
+  table {
+    overflow-x: scroll;
+    display: block;
+    white-space: nowrap;
   }
 }
 
-div.comparisontable {
+th {
+  background-color: #ebebeb;
+  flex: 1;
+  text-align: center;
+  padding: 40px 18px 50px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  th {
+    padding: 25px 18px 36px;
+  }
+}
+
+th:first-child {
+  background-color: #fff;
+}
+
+td {
+  text-align: center;
+  border-right: 1px solid #ebebeb;
+}
+
+td:first-child {
+  padding: 37px 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  td:first-child {
+    text-align: left;
+    padding: 17px 0;
+    white-space: normal;
+    min-width: 180px;
+  }
+}
+
+td > p {
+  padding: 0;
+  margin: 0 0.775rem;
+  font-weight: 500;
+}
+
+td > i {
+  color: #69bd45;
+}
+
+.comparison-block {
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
-  border: #ebebeb 0.05rem solid;
 }
 
-div.comparisontable ul.row {
-  list-style: none;
-  display: flex;
-  /* turn children li elements into flex children */
+.company-header {
   flex: 1;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-div.comparisontable ul.row li {
-  flex: 1;
-}
-
-div.comparisontable ul.row li > i {
   display: flex;
-  color: #69bd45;
-  justify-content: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  flex-direction: column;
+  align-items: center;
 }
 
-div.comparisontable ul.row li > img {
-  height: 1.5rem;
+.company-header .image {
+  padding-bottom: 30px;
 }
 
-/* the legend column (first li within each row) */
-div.comparisontable ul.row li.legend {
-  border: none;
-  width: 30rem;
-  text-align: center;
-}
-
-/* very first row */
-div.comparisontable ul.row:first-of-type li {
-  background: #ebebeb;
-  text-align: center;
-}
-
-div.comparisontable ul.row:first-of-type li > i {
-  text-align: center;
-}
-
-/* very last row */
-div.comparisontable ul.row:last-of-type li {
-  text-align: center;
-  border-bottom: none;
-}
-
-/* first and last cell within legend column */
-div.comparisontable ul.row:first-of-type li.legend.legend,
-div.comparisontable ul.row:last-of-type li.legend {
-  background: transparent;
-  box-shadow: none;
+.review-link a {
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 /* ==========================================================================
