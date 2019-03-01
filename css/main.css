@@ -1140,6 +1140,11 @@ Reviews Styles
   margin-bottom: 55px;
 }
 
+.right-review-column {
+  float: right;
+  clear: right;
+}
+
 .service-info-row {
   display: flex;
   justify-content: space-around;
